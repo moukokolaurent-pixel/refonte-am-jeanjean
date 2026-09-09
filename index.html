@@ -81,8 +81,9 @@
   @media (max-width: 1099px) { [data-amj-heroplate] { display: none !important; } }
   @media (max-width: 780px) { [data-amj-bio] { grid-template-columns: 1fr !important; } [data-amj-bio] figure { max-width: 220px !important; } }
   @media (max-width: 640px) {
-    [data-amj-dates] { display: grid !important; grid-template-columns: 1fr 1fr !important; row-gap: 26px !important; column-gap: 0 !important; }
-    [data-amj-dates] > div { border-left: 0 !important; padding: 0 var(--space-3) !important; }
+    [data-amj-dates] { display: grid !important; grid-template-columns: 1fr 1fr !important; align-items: start !important; row-gap: 24px !important; column-gap: 14px !important; }
+    [data-amj-dates] > div { border-left: 0 !important; padding: 0 var(--space-3) !important; min-width: 0 !important; }
+    [data-amj-dates] span { white-space: normal !important; }
   }
   @media (max-width: 899px) { [data-amj-culmin] { grid-template-columns: 1fr !important; } [data-amj-note2] { border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--color-divider); padding-top: var(--space-6); } }
   @media (prefers-reduced-motion: reduce) { [data-amj-diff] { animation: none !important; opacity: 0 !important; } [data-amj-word] { animation: none !important; } [data-amj-write] { clip-path: none !important; opacity: 1 !important; } [data-amj-nib] { display: none !important; } [data-amj-dots] span { animation: none !important; } }

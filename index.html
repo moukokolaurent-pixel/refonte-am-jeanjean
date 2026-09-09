@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Anne-Marie Jeanjean — Poète, plasticienne</title>
+<link rel="icon" href="logo-amj-noir.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="_ds/classical-44a30086-e05d-4482-8c91-7ac9ddcb6cef/styles.css">
+<script src="_ds/classical-44a30086-e05d-4482-8c91-7ac9ddcb6cef/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Rubik+Distressed&amp;family=Tangerine:wght@400;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+  * { box-sizing: border-box; }
+  img { display: block; max-width: 100%; }
+  a { color: var(--color-accent-700); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--color-accent-900); }
+  @keyframes amj-head { from { padding-top: clamp(22px, 3vw, 40px); padding-bottom: clamp(22px, 3vw, 40px); } to { padding-top: 12px; padding-bottom: 12px; } }
+  @keyframes amj-bar { from { background: rgba(253, 250, 244, 0); box-shadow: 0 0 0 rgba(32, 31, 29, 0); padding-top: 13px; padding-bottom: 13px; } to { background: rgba(253, 250, 244, 0.95); box-shadow: 0 3px 18px rgba(32, 31, 29, 0.13); padding-top: 8px; padding-bottom: 8px; } }
+  @keyframes amj-ink { from { color: #fdfaf4; } to { color: #444141; } }
+  @keyframes amj-ink-strong { from { color: #fdfaf4; } to { color: #201f1d; } }
+  @keyframes amj-logo { from { font-size: 25px; color: #fdfaf4; } to { font-size: 20px; color: #201f1d; } }
+  @keyframes amj-rule { from { background: #fdfaf4; } to { background: #b68235; } }
+  @keyframes amj-logo-size { from { width: 64px; } to { width: 48px; } }
+  @keyframes amj-logo-out { from { opacity: 1; } to { opacity: 0; } }
+  @keyframes amj-logo-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes amj-ink-bg { from { background: #fdfaf4; } to { background: #201f1d; } }
+  @keyframes amj-brd { from { border-color: rgba(253, 250, 244, 0.5); } to { border-color: #e3cfae; } }
+  [data-amj-hero] {
+    --color-bg: #171614; --color-surface: #1f1d1a; --color-text: #f6f3ed;
+    --color-divider: rgba(246, 243, 237, 0.14);
+    --color-neutral-100: #f8f6f1; --color-neutral-200: #ece9e3; --color-neutral-300: #dbd7d0;
+    --color-neutral-400: #bdb9b2; --color-neutral-700: #bdb7ae; --color-neutral-800: #ddd8d0; --color-neutral-900: #f2efe9;
+    --color-accent-100: rgba(182, 130, 53, 0.16); --color-accent-200: rgba(182, 130, 53, 0.26);
+    --color-accent-300: #e0bd82; --color-accent-400: #d1a761; --color-accent-700: #dcb677; --color-accent-800: #e8cb9c;
+    background: #171614; color: #f6f3ed;
+  }
+  [data-amj-theme] > section, [data-amj-theme] > footer { position: relative; z-index: 1; }
+  [data-amj-theme="dark"] {
+    --color-bg: #171614; --color-surface: #1f1d1a; --color-text: #f6f3ed;
+    --color-divider: rgba(246, 243, 237, 0.14);
+    --color-neutral-100: #1f1d1a; --color-neutral-200: #2a2724; --color-neutral-300: #3a3733;
+    --color-neutral-400: #6f6a63; --color-neutral-500: #8d877f; --color-neutral-600: #a9a39a;
+    --color-neutral-700: #bdb7ae; --color-neutral-800: #ddd8d0; --color-neutral-900: #f2efe9;
+    --color-accent-100: rgba(182, 130, 53, 0.16); --color-accent-200: rgba(182, 130, 53, 0.26);
+    --color-accent-300: #e0bd82; --color-accent-400: #d1a761;
+    --color-accent-600: #c08f3e; --color-accent-700: #dcb677; --color-accent-800: #e8cb9c; --color-accent-900: #f2e2c6;
+  }
+  [data-amj-theme="dark"] .card, [data-amj-theme="dark"] .input, [data-amj-theme="dark"] .dialog { background: #1f1d1a; }
+  @keyframes amj-dust { 0% { transform: translate3d(0,0,0); opacity: 0; } 12% { opacity: var(--o, 0.5); } 88% { opacity: var(--o, 0.5); } 100% { transform: translate3d(var(--dx, 30px), -120px, 0); opacity: 0; } }
+  @keyframes amj-fibre { from { background-position: 0% 50%, 0% 50%; } to { background-position: 62% 50%, 100% 50%; } }
+  @keyframes amj-vanish { 0%, 40% { opacity: 1; } 50%, 60% { opacity: 0.05; } 72%, 100% { opacity: 1; } }
+  @keyframes amj-dotA { 0%, 100% { transform: translate(0, 0); opacity: 0.28; } 35% { opacity: 0.62; } 50% { transform: translate(38px, -46px); opacity: 0.5; } 78% { opacity: 0.22; } }
+  @keyframes amj-dotB { 0%, 100% { transform: translate(0, 0); opacity: 0.5; } 30% { opacity: 0.2; } 50% { transform: translate(-52px, 34px); opacity: 0.58; } 80% { opacity: 0.3; } }
+  @keyframes amj-write {
+    0% { clip-path: polygon(0 -60%, 0 -60%, 0 160%, 0 160%); opacity: 1; }
+    4% { clip-path: polygon(0 -60%, 9% -60%, 3% 160%, 0 160%); opacity: 1; }
+    52% { clip-path: polygon(0 -60%, 112% -60%, 106% 160%, 0 160%); opacity: 1; }
+    88% { clip-path: polygon(0 -60%, 112% -60%, 112% 160%, 0 160%); opacity: 1; }
+    97% { clip-path: polygon(0 -60%, 112% -60%, 112% 160%, 0 160%); opacity: 0; }
+    98%, 100% { clip-path: polygon(0 -60%, 0 -60%, 0 160%, 0 160%); opacity: 0; }
+  }
+  @keyframes amj-nib {
+    0%, 2% { left: 0%; opacity: 0; }
+    7% { left: 6%; opacity: 0.9; }
+    50% { left: 99%; opacity: 0.9; }
+    54%, 100% { left: 100%; opacity: 0; }
+  }
+  @keyframes amj-static { 0%, 18%, 62%, 100% { filter: blur(0); opacity: 1; transform: translateX(0) skewX(0deg); } 38% { filter: blur(2.6px); opacity: 0.5; transform: translateX(1.5px) skewX(3deg); } 43% { filter: blur(0.4px); opacity: 0.92; transform: translateX(-2px) skewX(-2deg); } 48% { filter: blur(3.4px); opacity: 0.34; transform: translateX(2px) skewX(4deg); } 53% { filter: blur(1.2px); opacity: 0.78; transform: translateX(-1px) skewX(-1deg); } 57% { filter: blur(0.2px); opacity: 0.96; transform: translateX(0.5px); } }
+  @keyframes amj-diff-a { 0%, 78%, 100% { transform: translateX(0); opacity: 0; } 28% { transform: translateX(-3.5px); opacity: 0.82; } 54% { transform: translateX(-1.4px); opacity: 0.38; } }
+  @keyframes amj-diff-b { 0%, 78%, 100% { transform: translateX(0); opacity: 0; } 28% { transform: translateX(3.5px); opacity: 0.7; } 54% { transform: translateX(1.4px); opacity: 0.32; } }
+  @media (max-width: 1099px) { [data-amj-heroplate] { display: none !important; } }
+  @media (max-width: 780px) { [data-amj-bio] { grid-template-columns: 1fr !important; } [data-amj-bio] figure { max-width: 220px !important; } }
+  @media (max-width: 640px) {
+    [data-amj-dates] { display: grid !important; grid-template-columns: 1fr 1fr !important; row-gap: 26px !important; column-gap: 0 !important; }
+    [data-amj-dates] > div { border-left: 0 !important; padding: 0 var(--space-3) !important; }
+  }
+  @media (max-width: 899px) { [data-amj-culmin] { grid-template-columns: 1fr !important; } [data-amj-note2] { border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--color-divider); padding-top: var(--space-6); } }
+  @media (prefers-reduced-motion: reduce) { [data-amj-diff] { animation: none !important; opacity: 0 !important; } [data-amj-word] { animation: none !important; } [data-amj-write] { clip-path: none !important; opacity: 1 !important; } [data-amj-nib] { display: none !important; } [data-amj-dots] span { animation: none !important; } }
+  @keyframes amj-drawy { 0%, 100% { transform: scaleY(0.55); transform-origin: top; opacity: 0.5; } 50% { transform: scaleY(1); transform-origin: top; opacity: 1; } }
+  @keyframes amj-grain { 0%,100% { background-position: 0 0; } 50% { background-position: 32px 24px; } }
+  @keyframes amj-fall { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+  @keyframes amj-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  [data-amj-theme="dark"] [data-amj-hero] { background-color: transparent; }
+  [data-amj-theme="dark"] .input { color: var(--color-text); border-color: var(--color-divider); }
+  [data-amj-theme="dark"] .input::placeholder { color: #a9a39a; }
+  [data-amj-theme="dark"] .card { border-color: var(--color-divider); }
+  [data-amj-theme="dark"] .plate { background: #24211e; }
+  [data-amj-theme="dark"] .hr { border-color: var(--color-divider); }
+  [data-amj-theme="dark"] figcaption, [data-amj-theme="dark"] .card-meta { color: var(--color-neutral-800); }
+  [data-amj-theme="dark"] label { color: var(--color-neutral-800); }
+  [data-amj-theme="dark"] audio { border-radius: 999px; background: #2a2724; color-scheme: dark; }
+  @keyframes amj-cue { 0%, 100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(9px); opacity: 1; } }
+  @media (max-width: 860px) { [data-amj-portrait] { opacity: 0.34; width: clamp(150px, 40vw, 240px) !important; } }
+  @media (max-width: 1039px) {
+    [data-amj-bar] { max-width: fit-content !important; margin-left: auto !important; margin-right: auto !important; gap: var(--space-4) !important; }
+    [data-amj-toggle] { margin-left: 0 !important; }
+  }
+  @media (max-width: 860px) { [data-amj-portrait] { opacity: 0.34; width: clamp(150px, 40vw, 240px) !important; } }
+  @media (max-width: 1039px) {
+    [data-amj-nav] { display: none !important; }
+    [data-amj-burger] { display: inline-flex !important; }
+  }
+  @media (min-width: 1040px) { [data-amj-sheet] { display: none !important; } }
+  @keyframes amj-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes amj-slip { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: none; } }
+  @keyframes amj-ken { from { transform: scale(1.02); } to { transform: scale(1.14); } }
+  @keyframes amj-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes amj-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes amj-drift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+</style>
+<script src="header.js"></script>
+</helmet>
+
+<div data-amj-theme="{{ theme }}" style="width: 100%; min-height: 100vh; overflow-x: clip; position: relative; background: {{ ground }}; color: var(--color-text); transition: background 500ms ease, color 500ms ease;">
+  <div aria-hidden="true" style="position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;">
+    <div style="position: absolute; inset: 0; opacity: 0.5; background-image: radial-gradient(circle at 1px 1px, var(--color-accent-200) 0.6px, transparent 0.6px); background-size: 4px 4px; mix-blend-mode: overlay; animation: amj-grain 9s ease-in-out infinite;"></div>
+    <span style="position: absolute; left: 0%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -18px; opacity: 0; animation: amj-dust 26s 0s linear infinite;"></span><span style="position: absolute; left: 10.3%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 21px; opacity: 0; animation: amj-dust 35s 2.4s linear infinite;"></span><span style="position: absolute; left: 20.6%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -24px; opacity: 0; animation: amj-dust 44s 4.8s linear infinite;"></span><span style="position: absolute; left: 18.9%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 27px; opacity: 0; animation: amj-dust 53s 7.199999999999999s linear infinite;"></span><span style="position: absolute; left: 29.2%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -30px; opacity: 0; animation: amj-dust 62s 9.6s linear infinite;"></span><span style="position: absolute; left: 39.5%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 33px; opacity: 0; animation: amj-dust 26s 12s linear infinite;"></span><span style="position: absolute; left: 37.8%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -36px; opacity: 0; animation: amj-dust 35s 14.399999999999999s linear infinite;"></span><span style="position: absolute; left: 48.1%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 39px; opacity: 0; animation: amj-dust 44s 16.8s linear infinite;"></span><span style="position: absolute; left: 58.4%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -42px; opacity: 0; animation: amj-dust 53s 19.2s linear infinite;"></span><span style="position: absolute; left: 56.699999999999996%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 45px; opacity: 0; animation: amj-dust 62s 21.599999999999998s linear infinite;"></span><span style="position: absolute; left: 67%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -48px; opacity: 0; animation: amj-dust 26s 2s linear infinite;"></span><span style="position: absolute; left: 77.3%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 51px; opacity: 0; animation: amj-dust 35s 4.399999999999999s linear infinite;"></span><span style="position: absolute; left: 75.6%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -54px; opacity: 0; animation: amj-dust 44s 6.799999999999997s linear infinite;"></span><span style="position: absolute; left: 85.89999999999999%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 57px; opacity: 0; animation: amj-dust 53s 9.2s linear infinite;"></span><span style="position: absolute; left: 96.2%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -60px; opacity: 0; animation: amj-dust 62s 11.600000000000001s linear infinite;"></span><span style="position: absolute; left: 94.5%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 63px; opacity: 0; animation: amj-dust 26s 14s linear infinite;"></span>
+  </div>
+  <div aria-hidden="true" style="position: fixed; left: 0; top: 0; width: 2px; height: {{ progress }}; background: linear-gradient(180deg, var(--color-accent-400), var(--color-accent-700)); opacity: 0.5; z-index: 31; pointer-events: none; transition: height 120ms linear;"></div>
+  
+
+  <header data-amj-header="" style="position: fixed; top: 0; left: 0; right: 0; z-index: 30; padding: {{ headPad }} clamp(16px, 4vw, 56px); background: {{ headBg }}; box-shadow: {{ headShadow }}; backdrop-filter: {{ headBlur }}; -webkit-backdrop-filter: {{ headBlur }}; transition: padding 420ms cubic-bezier(.2,.7,.2,1), background 420ms ease, box-shadow 420ms ease;">
+    <div data-amj-bar="" style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: var(--space-6); justify-content: space-between; padding: 8px clamp(14px, 1.8vw, 22px); border: 1px solid {{ barBorder }}; border-radius: 999px; background: {{ barBg }}; box-shadow: {{ barShadow }}; backdrop-filter: {{ barBlur }}; -webkit-backdrop-filter: {{ barBlur }}; transition: background 420ms ease, border-color 420ms ease, box-shadow 420ms ease, backdrop-filter 420ms ease;">
+      <a href="index.html" aria-label="Accueil" style="display: flex; flex-shrink: 0; align-items: center; text-decoration: none;">
+        <span data-amj-logo="" style="position: relative; display: block; width: {{ logoW }}; aspect-ratio: 1; transition: width 420ms cubic-bezier(.2,.7,.2,1);"><img src="logo-amj-noir.png" alt="Anne-Marie Jeanjean" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: {{ logoDark }}; transition: opacity 420ms ease;"><img src="logo-amj-blanc.png" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: {{ logoLight }}; transition: opacity 420ms ease;"></span>
+      </a>
+      <button type="button" onClick="{{ toggleTheme }}" data-amj-toggle="" aria-label="Basculer clair / sombre" title="Clair / sombre" style="flex-shrink: 0; order: 3; margin-left: auto; width: 32px; height: 32px; display: inline-grid; place-items: center; border: 1px solid {{ toggleBorder }}; border-radius: 50%; background: none; color: {{ ink }}; font-size: 13px; line-height: 1; cursor: pointer; padding: 0; transition: color 420ms ease, border-color 420ms ease;" style-hover="border-color: var(--color-accent);">{{ themeIcon }}</button>
+      <nav data-amj-nav="" style="order: 2; display: flex; flex: 1 1 auto; min-width: 0; justify-content: flex-end; align-items: baseline; gap: 10px 26px; flex-wrap: wrap; font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase;">
+        <a href="index.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease; border-bottom: 1px solid var(--color-accent);" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">L’auteure</span></a>
+        <div onMouseEnter="{{ openCreations }}" onMouseLeave="{{ closeCreations }}" style="position: relative;">
+          <button type="button" onClick="{{ toggleCreations }}" aria-haspopup="true" style="display: inline-flex; align-items: center; gap: 5px; font: inherit; letter-spacing: inherit; text-transform: inherit; color: {{ ink }}; background: none; border: 0; padding: 0 0 4px; cursor: pointer; transition: color 220ms;" style-hover="color: var(--color-accent-700);">Créations<span style="display: inline-block; font-size: 9px;">▾</span></button>
+          <sc-if value="{{ creationsOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 14px;">
+              <div style="min-width: 250px; background: var(--color-surface); border: 1px solid var(--color-accent-300); border-radius: var(--radius-md); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34); padding: var(--space-2) 0; display: grid; animation: amj-rise 260ms cubic-bezier(.2,.7,.2,1) both;">
+                <span style="padding: 4px var(--space-4) 8px; font-size: 9.5px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-accent-700);">Créations</span>
+                <a href="livres.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Livres</a>
+                <a href="expositions.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Expositions</a>
+                <a href="poesie.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Poésies visuelles &amp; auditives</a>
+                <a href="revue-textuerre.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Revue Textuerre</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="la-saveur-du-vent.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">La saveur du vent</span></a>
+        <a href="tardigradeditions.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Tardigradéditions</span></a>
+        <a href="actualites.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Actualités</span></a>
+        <a href="contact.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Contact</span></a>
+      </nav>
+      <button type="button" data-amj-burger="" onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuExpanded }}" style="display: none; order: 4; flex-shrink: 0; margin-left: var(--space-3); width: 42px; height: 42px; align-items: center; justify-content: center; background: none; border: 1px solid {{ toggleBorder }}; border-radius: 50%; cursor: pointer; padding: 0;">
+        <span style="display: grid; gap: 4px;"><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: transform 320ms;"></span><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: opacity 200ms;"></span><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: transform 320ms;"></span></span>
+      </button>
+    </div>
+    <div data-amj-sheet="" style="max-width: 1100px; margin: 10px auto 0; display: {{ sheetDisplay }}; flex-direction: column; gap: 2px; padding: var(--space-4); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34);">
+      <a href="index.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">L’auteure</a>
+      <a href="livres.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Livres</a>
+      <a href="expositions.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Expositions</a>
+      <a href="poesie.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Poésies visuelles &amp; auditives</a>
+      <a href="revue-textuerre.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Revue Textuerre</a>
+      <a href="la-saveur-du-vent.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">La saveur du vent</a>
+      <a href="tardigradeditions.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Tardigradéditions</a>
+      <a href="actualites.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Actualités</a>
+      <a href="contact.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Contact</a>
+    </div>
+
+  </header>
+
+  <section data-amj-hero="" ref="{{ heroRef }}" style="position: relative; color: var(--color-text); min-height: 100svh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; isolation: isolate;">
+      <div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(140px, 22vh, 260px); z-index: 5; pointer-events: none; background: {{ heroFade }};"></div>
+      <div aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; height: 190px; z-index: 0; pointer-events: none; background: linear-gradient(180deg, #000 0%, #000 42%, rgba(0, 0, 0, 0.62) 72%, rgba(0, 0, 0, 0) 100%);"></div>
+    <div ref="{{ layerRef }}" style="position: absolute; inset: -3% -3% -3% -3%; z-index: 0; transition: transform 600ms cubic-bezier(.2,.7,.2,1);">
+      <div data-slide="0" data-title="No hay Camino, encre" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 1; transition: opacity 1600ms ease;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_145307.jpg?w=1800&amp;ssl=1" alt="No hay Camino — encre" style="width: 100%; height: 100%; object-fit: cover; object-position: center 36%; filter: blur(3px) brightness(0.52) saturate(0.72) contrast(1.04); animation: amj-ken 34s ease-in-out infinite alternate;">
+      </div>
+      <div data-slide="1" data-title="Page calligraphiée" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 0; transition: opacity 1600ms ease;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_145324.jpg?w=1800&amp;ssl=1" alt="No hay Camino — page calligraphiée" style="width: 100%; height: 100%; object-fit: cover; object-position: center 36%; filter: blur(3px) brightness(0.52) saturate(0.72) contrast(1.04); animation: amj-ken 34s ease-in-out infinite alternate;">
+      </div>
+      <div data-slide="2" data-title="No hay Camino, collage" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 0; transition: opacity 1600ms ease;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/No-Hay-Camino.jpg?w=1800&amp;ssl=1" alt="No hay Camino — collage" style="width: 100%; height: 100%; object-fit: cover; object-position: center 48%; filter: blur(3px) brightness(0.52) saturate(0.72) contrast(1.04); animation: amj-ken 34s ease-in-out infinite alternate;">
+      </div>
+      <div data-slide="3" data-title="Calligraphie ancienne" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 0; transition: opacity 1600ms ease;">
+        <img src="https://unsplash.com/photos/GdCR9_WMz_4/download?force=true&amp;w=1800" alt="Calligraphie ancienne sur rouleau — photo Kouji Tsuru, Unsplash" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.74) saturate(0.8) contrast(1.04);">
+      </div>
+      <div data-slide="4" data-title="Écouter, entendre" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 0; transition: opacity 1600ms ease;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_145244.jpg?w=1800&amp;ssl=1" alt="No hay Camino — écouter, entendre" style="width: 100%; height: 100%; object-fit: cover; object-position: center 38%; filter: blur(3px) brightness(0.52) saturate(0.72) contrast(1.04); animation: amj-ken 34s ease-in-out infinite alternate;">
+      </div>
+      <div data-slide="5" data-title="Encre, cheval Shan" style="position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 50%, #1c1917 0%, #100f0e 70%); opacity: 0; transition: opacity 1600ms ease;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2024/10/cheval-Shan.jpg?w=1800&amp;ssl=1" alt="Encre — cheval Shan" style="width: 100%; height: 100%; object-fit: cover; object-position: 52% 30%; filter: blur(3px) brightness(0.52) saturate(0.72) contrast(1.04); animation: amj-ken 34s ease-in-out infinite alternate;">
+      </div>
+    </div>
+    <div style="position: absolute; inset: 0; z-index: 1; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); background: radial-gradient(120% 82% at 50% 46%, rgba(15,14,13,0.18) 0%, rgba(13,12,11,0.72) 62%, rgba(9,8,8,0.95) 100%), linear-gradient(180deg, rgba(15,14,13,0.55) 0%, rgba(15,14,13,0.2) 30%, rgba(15,14,13,0.5) 66%, rgba(11,10,10,0.94) 100%);"></div>
+
+    <div style="position: relative; z-index: 2; width: 100%; max-width: 980px; margin: 0 auto; padding: clamp(74px, 11vh, 150px) clamp(18px, 4vw, 56px) 0; display: grid; justify-items: center; text-align: center;">
+      <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 11.5px; letter-spacing: 0.34em; text-transform: uppercase; color: #e0bd82; font-variant-numeric: tabular-nums; animation: amj-rise 800ms ease-out both;">
+        <span style="width: 40px; height: 1px; background: var(--color-accent-400); display: block; transform-origin: right; animation: amj-draw 1000ms 260ms ease-out both;"></span>
+        Depuis 1976
+        <span style="width: 40px; height: 1px; background: var(--color-accent-400); display: block; transform-origin: left; animation: amj-draw 1000ms 260ms ease-out both;"></span>
+      </div>
+      <h1 style="margin: clamp(14px, 2vw, 26px) 0 0; font-family: var(--font-heading); font-weight: 300; font-size: clamp(40px, min(7.5vw, 13vh), 112px); line-height: 0.9; letter-spacing: -0.025em; color: var(--color-text);">
+        <span style="display: block; animation: amj-slip 1100ms 120ms cubic-bezier(.16,.84,.24,1) both;">Anne-Marie</span>
+        <span style="display: block; font-style: italic; animation: amj-slip 1100ms 300ms cubic-bezier(.16,.84,.24,1) both;">Jeanjean</span>
+      </h1>
+      <p style="margin: clamp(22px, 3.4vw, 44px) 0 0; max-width: 21em; font-family: var(--font-heading); font-weight: 400; font-size: clamp(21px, min(2.9vw, 4vh), 38px); line-height: 1.3; letter-spacing: -0.008em; color: #f6f3ed; text-wrap: pretty; animation: amj-rise 900ms 520ms ease-out both;">
+        Poète, écrivaine, collagiste dans la tension entre le
+        <span style="color: #f0d7a8; border-bottom: 2px solid var(--color-accent-400); padding-bottom: 1px;">texte</span>, le
+        <span style="color: #f0d7a8; border-bottom: 2px solid var(--color-accent-400); padding-bottom: 1px;">visuel</span> et le
+        <span style="color: #f0d7a8; border-bottom: 2px solid var(--color-accent-400); padding-bottom: 1px;">sonore</span>.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: clamp(24px, 3vw, 40px); animation: amj-rise 900ms 700ms ease-out both;">
+        <a class="btn btn-primary" href="livres.html" style="color: var(--color-accent-300); border-color: var(--color-accent-400);">Livres</a>
+        <a class="btn btn-secondary" href="expositions.html" style="color: var(--color-text); border-color: color-mix(in srgb, var(--color-neutral-100) 42%, transparent);">Expositions</a>
+        <a class="btn btn-ghost" href="poesie.html" style="color: var(--color-text);">Poésies</a>
+      </div>
+    </div>
+  
+      <div data-amj-dates="" style="position: relative; z-index: 6; width: 100%; margin: clamp(20px, 4.5vh, 66px) 0 clamp(30px, 5vh, 64px); display: flex; flex-wrap: wrap; justify-content: center; align-items: end; gap: clamp(6px, 1.4vh, 14px) 0; padding: 0 clamp(18px, 4vw, 56px); animation: amj-rise 900ms 880ms ease-out both;">
+        <div style="display: grid; gap: 5px; justify-items: center; padding: 0 clamp(10px, 2vw, 26px); ">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(25px, 2.7vw, 37px); line-height: 1; letter-spacing: -0.012em; color: #f6f3ed; font-variant-numeric: tabular-nums;">1976</span>
+          <span style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #f0d7a8; white-space: nowrap;">Revue Textuerre</span>
+        </div>
+        <div style="display: grid; gap: 5px; justify-items: center; padding: 0 clamp(10px, 2vw, 26px); border-left: 1px solid rgba(224, 189, 130, 0.28);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(25px, 2.7vw, 37px); line-height: 1; letter-spacing: -0.012em; color: #f6f3ed; font-variant-numeric: tabular-nums;">1981</span>
+          <span style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #f0d7a8; white-space: nowrap;">Via Scavi, théâtre</span>
+        </div>
+        <div style="display: grid; gap: 5px; justify-items: center; padding: 0 clamp(10px, 2vw, 26px); border-left: 1px solid rgba(224, 189, 130, 0.28);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(25px, 2.7vw, 37px); line-height: 1; letter-spacing: -0.012em; color: #f6f3ed; font-variant-numeric: tabular-nums;">1997</span>
+          <span style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #f0d7a8; white-space: nowrap;">Tardigradéditions</span>
+        </div>
+        <div style="display: grid; gap: 5px; justify-items: center; padding: 0 clamp(10px, 2vw, 26px); border-left: 1px solid rgba(224, 189, 130, 0.28);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(25px, 2.7vw, 37px); line-height: 1; letter-spacing: -0.012em; color: #f6f3ed; font-variant-numeric: tabular-nums;">2024</span>
+          <span style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #f0d7a8; white-space: nowrap;">Le cheval de Mingdao</span>
+        </div>
+      </div>
+      <div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: clamp(8px, 1.6vh, 18px); z-index: 6; display: grid; justify-items: center; gap: 8px; animation: amj-rise 900ms 1100ms ease-out both;">
+        <span style="display: block; width: 1px; height: clamp(20px, 3vh, 38px); background: linear-gradient(180deg, rgba(224, 189, 130, 0), rgba(224, 189, 130, 0.85)); animation: amj-drawy 2600ms ease-in-out infinite;"></span>
+        <span style="font-size: 9.5px; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(240, 215, 168, 0.72);">Lire la suite</span>
+      </div>
+    </section>
+
+  <section style="border-bottom: 1px solid var(--color-divider); padding: {{ galleryPad }} 0 var(--space-6); overflow: hidden; background: {{ galleryFade }};">
+    <div ref="{{ marqueeRef }}" style="display: flex; width: max-content; gap: var(--space-6); animation: amj-marquee 64s linear infinite;">
+      <div style="display: flex; gap: var(--space-6); align-items: flex-end;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/memoire-des-alphabets.jpg?fit=310%2C423&amp;ssl=1" alt="Mémoire des alphabets" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/ailleurs.jpg?w=600&amp;ssl=1" alt="Écrit ailleurs" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/miss-dracula2.jpg?fit=193%2C400&amp;ssl=1" alt="Ainsi chantait miss Drac’Ula" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2024/10/cheval-Shan.jpg?w=600&amp;ssl=1" alt="Encre — cheval Shan" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_145244.jpg?w=600&amp;ssl=1" alt="No hay Camino" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/prague.jpg?fit=129%2C283&amp;ssl=1" alt="Le rêve de Prague" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/moisson.jpg?fit=139%2C283&amp;ssl=1" alt="Moisson de ténèbres" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/walzer.jpg?w=600&amp;ssl=1" alt="Walser ô Walser" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/miss-dracula.jpg?w=600&amp;ssl=1" alt="Miss Drac’Ula — montage" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+      </div>
+      <div aria-hidden="true" style="display: flex; gap: var(--space-6); align-items: flex-end;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/memoire-des-alphabets.jpg?fit=310%2C423&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/ailleurs.jpg?w=600&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/miss-dracula2.jpg?fit=193%2C400&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2024/10/cheval-Shan.jpg?w=600&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_145244.jpg?w=600&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/prague.jpg?fit=129%2C283&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/moisson.jpg?fit=139%2C283&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/walzer.jpg?w=600&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/miss-dracula.jpg?w=600&amp;ssl=1" alt="" style="height: clamp(120px, 15vw, 190px); aspect-ratio: 3 / 4; width: auto; object-fit: cover; object-position: center; border: 1px solid var(--color-divider); border-radius: 16px;">
+      </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" style="height: clamp(90px, 12vh, 150px); background: {{ afterGallery }};"></div>
+
+  <section style="position: relative; max-width: 1440px; margin: 0 auto; padding: clamp(48px, 7vw, 112px) clamp(18px, 4vw, 56px); overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); height: 78%; z-index: 0; pointer-events: none; overflow: hidden; mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 74%, transparent 100%); -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 74%, transparent 100%);">
+      <div style="position: absolute; left: 0; top: 8%; display: flex; width: max-content; white-space: nowrap; font-family: var(--font-heading); font-style: italic; font-weight: 300; font-size: clamp(40px, 5.6vw, 86px); line-height: 1.34; color: rgba(182, 130, 53, 0.24); animation: amj-slide 175s linear infinite;"><span style="padding: 0 clamp(48px, 6vw, 110px);">interroger l’écriture dans sa matérialité</span><span style="padding: 0 clamp(48px, 6vw, 110px);">interroger l’écriture dans sa matérialité</span><span style="padding: 0 clamp(48px, 6vw, 110px);">interroger l’écriture dans sa matérialité</span><span style="padding: 0 clamp(48px, 6vw, 110px);">interroger l’écriture dans sa matérialité</span></div>
+      <div style="position: absolute; left: 0; top: 54%; display: flex; width: max-content; white-space: nowrap; font-family: var(--font-heading); font-style: italic; font-weight: 300; font-size: clamp(40px, 5.6vw, 86px); line-height: 1.34; color: rgba(182, 130, 53, 0.24); animation: amj-slide 215s linear infinite reverse;"><span style="padding: 0 clamp(48px, 6vw, 110px);">aller vers d’autres diffractions de sens</span><span style="padding: 0 clamp(48px, 6vw, 110px);">aller vers d’autres diffractions de sens</span><span style="padding: 0 clamp(48px, 6vw, 110px);">aller vers d’autres diffractions de sens</span><span style="padding: 0 clamp(48px, 6vw, 110px);">aller vers d’autres diffractions de sens</span></div>
+    </div>
+
+    <div style="position: relative; z-index: 1; display: flex; align-items: baseline; gap: var(--space-4); border-bottom: 1px solid var(--color-divider); padding-bottom: var(--space-3);">
+      <h2 style="margin: 0; font-family: var(--font-body); font-size: 11.5px; font-weight: 500; letter-spacing: 0.34em; text-transform: uppercase; color: var(--color-accent-700);">Un parcours</h2>
+      <span style="margin-left: auto; font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-neutral-700); font-variant-numeric: tabular-nums;">01</span>
+    </div>
+
+    <div data-amj-bio="" style="display: grid; grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.6fr); gap: clamp(28px, 5vw, 80px); margin-top: clamp(32px, 5vw, 64px); align-items: center;">
+      <figure data-amj-reveal="" style="margin: 0; width: 100%; max-width: 280px; animation: amj-drift 16s ease-in-out infinite;">
+        <a href="http://www.lelitteraire.com/?p=22846" style="display: block;">
+          <span class="plate" style="display: block; border-radius: 18px; overflow: hidden; border-radius: 16px; overflow: hidden;">
+            <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/anne-marie-jeanjean.jpg?fit=480%2C840&amp;ssl=1" alt="Anne-Marie Jeanjean" style="width: 100%; height: auto; border-radius: 12px; image-rendering: auto; filter: contrast(1.07) saturate(1.03); transform: translateZ(0);">
+          </span>
+        </a>
+      </figure>
+      <div data-amj-reveal="" style="min-width: 0; display: grid; gap: var(--space-6);">
+        <p style="margin: 0; max-width: 22em; font-family: var(--font-heading); font-weight: 300; font-size: clamp(28px, 3.8vw, 56px); line-height: 1.08; letter-spacing: -0.02em;">Depuis 1976, <strong style="font-weight: 400;">Anne-Marie Jeanjean a publié dans plus d’une cinquantaine de revues, a édité et co-dirigé la revue de création Textuerre</strong>.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-6); border-top: 1px solid var(--color-divider); padding-top: var(--space-4);">
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--color-neutral-800);">Née en 1944, vit et travaille près de Montpellier.</p>
+          <a href="http://www.lelitteraire.com/?p=22846" title="sur le site lelitteraire.com" style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--color-accent); padding-bottom: 2px; white-space: nowrap;">Entretien&nbsp;: lelitteraire.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div data-amj-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 4vw, 76px); margin-top: clamp(40px, 5.5vw, 88px); border-top: 1px solid var(--color-divider); padding-top: clamp(28px, 3.4vw, 50px);">
+      <div style="display: grid; gap: var(--space-4); align-content: start;">
+        <div style="display: flex; align-items: baseline; gap: var(--space-3);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(30px, 3vw, 46px); line-height: 0.86; letter-spacing: -0.02em; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">1981</span>
+          <span aria-hidden="true" style="flex: 1; height: 1px; background: var(--color-divider);"></span>
+          <span style="font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--color-neutral-700); white-space: nowrap;">Théâtre &amp; son</span>
+        </div>
+        <p style="margin: 0; font-family: var(--font-heading); font-weight: 400; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.32; letter-spacing: -0.008em; color: var(--color-text); text-wrap: pretty;">Elle s’est confrontée à l’expérience théâtrale avec <a href="http://amjeanjeancom.wpcomstaging.com/archives/archives-2013.php/" title="Georges Baal" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-accent);">Georges Baal</a> et l’Atraal Théâtre</p>
+        <p style="margin: 0; font-size: 15.5px; line-height: 1.78; color: var(--color-neutral-800); max-width: 34em;">(plusieurs représentations de Vias Scavi à Montpellier et Paris…), pratique le montage sonore (plusieurs pièces en auditions publiques par Ecrits-Studio/GMVL à Lyon) et réalise plusieurs séries de collages visuels — expositions en France et à l’étranger.</p>
+      </div>
+      <div data-amj-note2="" style="display: grid; gap: var(--space-4); align-content: start; border-left: 1px solid var(--color-divider); padding-left: clamp(20px, 2.4vw, 44px);">
+        <div style="display: flex; align-items: baseline; gap: var(--space-3);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(30px, 3vw, 46px); line-height: 0.86; letter-spacing: -0.02em; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">1997</span>
+          <span aria-hidden="true" style="flex: 1; height: 1px; background: var(--color-divider);"></span>
+          <span style="font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--color-neutral-700); white-space: nowrap;">Micro-collection</span>
+        </div>
+        <p style="margin: 0; font-family: var(--font-heading); font-weight: 400; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.32; letter-spacing: -0.008em; color: var(--color-text); text-wrap: pretty;">Elle fonde <a href="http://amjeanjeancom.wpcomstaging.com/pages/toc-tardigradeditions.php/" title="Tardigradéditions" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-accent);">Tardigradéditions</a> pour approfondir la problématique écriture / visualité en compagnie d’autres artistes</p>
+        <p style="margin: 0; font-size: 15.5px; line-height: 1.78; color: var(--color-neutral-800); max-width: 34em;">Invitée à différentes manifestations littéraires en France et à l’étranger — dont le colloque de Cerisy <em>Poésie sonore / poésie action</em> dirigé par J.P. Bobillot et B. Heidsieck.</p>
+      </div>
+      <div data-amj-note2="" style="display: grid; gap: var(--space-4); align-content: start; border-left: 1px solid var(--color-divider); padding-left: clamp(20px, 2.4vw, 44px);">
+        <div style="display: flex; align-items: baseline; gap: var(--space-3);">
+          <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(30px, 3vw, 46px); line-height: 0.86; letter-spacing: -0.02em; color: var(--color-accent-700); font-variant-numeric: tabular-nums;">2024</span>
+          <span aria-hidden="true" style="flex: 1; height: 1px; background: var(--color-divider);"></span>
+          <span style="font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--color-neutral-700); white-space: nowrap;">Quatre mains</span>
+        </div>
+        <p style="margin: 0; font-family: var(--font-heading); font-weight: 400; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.32; letter-spacing: -0.008em; color: var(--color-text); text-wrap: pretty;"><a href="la-saveur-du-vent.html" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--color-accent);">Le Cheval de Mingdao</a>, écrit à quatre mains avec Shanshan Sun, devient récital</p>
+        <p style="margin: 0; font-size: 15.5px; line-height: 1.78; color: var(--color-neutral-800); max-width: 34em;">Le livre (2008) inspire à Vincent Ferrand une forme mêlant contrebasse, texte dit et chœur — créée à Montpellier en 2023, accueillie à Montauban en juin 2024.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-amj-hero="" style="position: relative; overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; inset: -1px 0; z-index: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8, 7, 6, 0) 0%, rgba(8, 7, 6, 0.66) 16%, rgba(8, 7, 6, 0.84) 50%, rgba(8, 7, 6, 0.66) 86%, rgba(8, 7, 6, 0) 100%);"></div>
+    <div aria-hidden="true" data-amj-dots="" style="position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;">
+      <span style="position: absolute; left: 12%; top: 18%; width: 2.5px; height: 2.5px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 7.5px 1.25px rgba(224, 189, 130, 0.35); animation: amj-dotA 34s 0s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 26%; top: 62%; width: 1.8px; height: 1.8px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 5.4px 0.9px rgba(224, 189, 130, 0.35); animation: amj-dotB 41s 3s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 44%; top: 30%; width: 2px; height: 2px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 6px 1px rgba(224, 189, 130, 0.35); animation: amj-dotA 37s 6s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 58%; top: 74%; width: 3px; height: 3px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 9px 1.5px rgba(224, 189, 130, 0.35); animation: amj-dotB 46s 1.5s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 70%; top: 22%; width: 1.6px; height: 1.6px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 4.800000000000001px 0.8px rgba(224, 189, 130, 0.35); animation: amj-dotA 39s 8s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 82%; top: 58%; width: 2.2px; height: 2.2px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 6.6000000000000005px 1.1px rgba(224, 189, 130, 0.35); animation: amj-dotB 44s 4s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 34%; top: 88%; width: 1.9px; height: 1.9px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 5.699999999999999px 0.95px rgba(224, 189, 130, 0.35); animation: amj-dotA 36s 10s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 64%; top: 46%; width: 1.4px; height: 1.4px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 4.199999999999999px 0.7px rgba(224, 189, 130, 0.35); animation: amj-dotB 49s 7s ease-in-out infinite;"></span>
+      <span style="position: absolute; left: 18%; top: 44%; width: 2.1px; height: 2.1px; border-radius: 50%; background: #e0bd82; box-shadow: 0 0 6.300000000000001px 1.05px rgba(224, 189, 130, 0.35); animation: amj-dotB 42s 12s ease-in-out infinite;"></span>
+    </div>
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 9vw, 128px) clamp(18px, 4vw, 56px) clamp(56px, 9vw, 128px) clamp(56px, 6vw, 90px); position: relative;">
+      <sc-if value="{{ showNumeral }}" hint-placeholder-val="{{ true }}">
+        <span ref="{{ numeralRef }}" style="position: absolute; right: clamp(-8px, 1vw, 26px); top: clamp(0px, 1.4vw, 18px); font-family: var(--font-heading); font-size: clamp(140px, 22vw, 320px); line-height: 0.7; color: color-mix(in srgb, var(--color-accent) 19%, transparent); font-variant-numeric: tabular-nums; pointer-events: none; user-select: none; will-change: transform;">97</span>
+      </sc-if>
+      
+      <div aria-hidden="true" style="position: absolute; left: clamp(14px, 2vw, 30px); top: 0; bottom: 0; width: clamp(34px, 3.4vw, 46px); z-index: 0; pointer-events: none; overflow: hidden; mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%); -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);">
+        <div style="position: absolute; top: 0; left: 0; writing-mode: vertical-rl; text-orientation: upright; font-family: 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', SimSun, 'Hiragino Mincho ProN', serif; font-size: clamp(22px, 2.4vw, 34px); line-height: 1.5; letter-spacing: 0.42em; color: rgba(224, 189, 130, 0.42); animation: amj-fall 46s linear infinite;">問書墨紙女道問書墨紙女道問書墨紙女道問書墨紙女道</div>
+      </div>
+      <figure data-amj-portrait="" style="position: absolute; right: clamp(-8px, 1vw, 32px); top: 43%; transform: translateY(-50%) rotate(1.2deg); width: clamp(170px, 20vw, 262px); margin: 0; z-index: 0; pointer-events: none;">
+        <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/Portrait-cal-AMJ.jpg?w=900&amp;ssl=1" alt="Anne-Marie Jeanjean" style="display: block; width: 100%; height: auto; border-radius: 14px; filter: grayscale(1) contrast(1.12) brightness(0.82) sepia(0.16); mix-blend-mode: luminosity; opacity: 0.62; mask-image: radial-gradient(115% 92% at 76% 44%, #000 34%, rgba(0,0,0,0.72) 58%, rgba(0,0,0,0) 88%); -webkit-mask-image: radial-gradient(115% 92% at 76% 44%, #000 34%, rgba(0,0,0,0.72) 58%, rgba(0,0,0,0) 88%);">
+        <figcaption style="margin-top: var(--space-3); text-align: right; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: #e0bd82;">Portrait, atelier</figcaption>
+      </figure>
+      <p data-amj-reveal="" style="position: relative; margin: 0; display: inline-flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--color-accent-300);"><span aria-hidden="true" style="display: block; width: 26px; height: 1px; background: var(--color-accent-400);"></span>Interroger l’écriture</p>
+      <div style="position: relative; margin-top: clamp(28px, 4.4vw, 58px); font-family: var(--font-heading); font-weight: 300; display: grid; gap: clamp(16px, 2vw, 34px);">
+        <span data-amj-reveal="" style="font-size: clamp(29px, 4.6vw, 64px); line-height: 1.07; letter-spacing: -0.02em; max-width: 21em;">Anne-Marie Jeanjean <em style="font-weight: 400;">met radicalement en question</em> la page traditionnelle du livre</span>
+        <span data-amj-reveal="" style="justify-self: start; margin-left: clamp(0px, 7vw, 150px); padding-left: clamp(14px, 1.6vw, 26px); border-left: 1px solid color-mix(in srgb, var(--color-accent) 65%, transparent); font-size: clamp(21px, 2.9vw, 40px); line-height: 1.2; text-transform: uppercase; letter-spacing: 0.045em; max-width: 19em;">Interroger l’écriture dans sa <span data-amj-word="" style="display: inline-block; font-size: 1.24em; letter-spacing: 0.1em; color: var(--color-accent-300); background-image: repeating-linear-gradient(96deg, rgba(58, 38, 10, 0.42) 0 1px, rgba(255, 255, 255, 0) 1px 3px), linear-gradient(100deg, #d3ad70 0%, #f4e0b8 26%, #c69646 52%, #f2dcae 78%, #d3ad70 100%); background-size: 260% 100%, 260% 100%; background-position: 0% 50%, 0% 50%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: amj-fibre 18s ease-in-out infinite alternate;">matérialité</span></span>
+        <span data-amj-reveal="" style="justify-self: end; margin-right: clamp(0px, 11vw, 190px); display: inline-flex; align-items: center; gap: clamp(12px, 1.6vw, 26px); text-align: right; font-style: italic; font-size: clamp(30px, 5vw, 76px); line-height: 1.02; letter-spacing: -0.022em;"><span aria-hidden="true" style="flex-shrink: 0; display: grid; place-items: center; width: clamp(28px, 2.5vw, 40px); height: clamp(28px, 2.5vw, 40px); color: #f8f4ec; font-family: 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', serif; font-style: normal; font-size: clamp(16px, 1.5vw, 23px); transform: rotate(-3deg);">印</span><span>la «&nbsp;soumettre à la <span style="font-style: normal; text-transform: uppercase; letter-spacing: 0.01em;">question</span>&nbsp;»</span></span>
+        <span data-amj-reveal="" style="margin-left: clamp(0px, 3.4vw, 76px); font-size: clamp(20px, 2.4vw, 33px); line-height: 1.34; max-width: 25em; color: var(--color-neutral-800);">en explorant ses possibilités <span style="position: relative; display: inline-block; white-space: nowrap;"><span data-amj-word="" data-amj-write="" style="display: inline-block; font-family: 'Tangerine', var(--font-heading), cursive; font-size: 1.95em; line-height: 0.82; letter-spacing: 0.01em; vertical-align: -0.05em; color: var(--color-text); clip-path: polygon(0 -60%, 0 -60%, 0 160%, 0 160%); animation: amj-write 8.5s cubic-bezier(.42,.02,.58,1) infinite;">graphiques</span><span data-amj-word="" data-amj-nib="" aria-hidden="true" style="position: absolute; top: 54%; left: 0%; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: #f0d7a8; box-shadow: 0 0 7px 2px rgba(240, 215, 168, 0.5); opacity: 0; animation: amj-nib 8.5s cubic-bezier(.42,.02,.58,1) infinite;"></span></span> / plastiques pour&nbsp;…<span style="display: block; margin-top: 8px; color: var(--color-accent-300); font-size: 1.2em; letter-spacing: 0.18em; text-transform: uppercase;">peut-être&nbsp;…</span></span>
+      </div>
+      <div data-amj-reveal="" style="position: relative; margin: clamp(36px, 5vw, 76px) 0 0; padding: clamp(18px, 2.2vw, 34px) 0; border-top: 1px solid color-mix(in srgb, var(--color-accent) 42%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 42%, transparent);">
+        <p style="margin: 0; font-family: var(--font-heading); font-weight: 400; font-size: clamp(23px, 3.5vw, 52px); line-height: 1.1; letter-spacing: 0.032em; text-transform: uppercase; color: var(--color-accent-300); max-width: 24em;">Aller vers d’autres <span data-amj-diffwrap="" style="position: relative; display: inline-block; white-space: nowrap;"><span data-amj-diff="" aria-hidden="true" style="position: absolute; left: 0; top: 0; color: var(--color-accent-400); opacity: 0; animation: amj-diff-a 4.6s 1s ease-in-out infinite;">diffractions</span><span data-amj-diff="" aria-hidden="true" style="position: absolute; left: 0; top: 0; color: #cfc7ba; opacity: 0; animation: amj-diff-b 4.6s 1s ease-in-out infinite;">diffractions</span><span style="position: relative;">diffractions</span></span> de <span data-amj-word="" style="display: inline-block; animation: amj-static 4.6s 1s ease-in-out infinite;">sens</span>,</p>
+      </div>
+      <p data-amj-reveal="" style="position: relative; margin: clamp(40px, 5.4vw, 78px) 0 clamp(30px, 4vw, 56px) clamp(0px, 2.4vw, 54px); max-width: 34em; padding: clamp(4px, 0.8vw, 10px) 0 clamp(4px, 0.8vw, 10px) clamp(22px, 2.6vw, 40px); border-left: 3px solid var(--color-accent-400); font-family: var(--font-heading); font-size: clamp(22px, 2.1vw, 32px); line-height: 1.62; color: #ede7dc; text-wrap: pretty;">tels sont les jeux et enjeux de cette étrange passion qui la pousse à <span style="display: inline-block; font-family: var(--font-heading); font-weight: 500; font-size: 1.5em; line-height: 1; letter-spacing: 0.03em; color: var(--color-text); vertical-align: -0.08em;"><span style="display: inline-block; transform: translateY(-2px) rotate(-5deg);">D</span><span style="display: inline-block; transform: translateY(2px) rotate(2deg);">É</span><span style="display: inline-block; transform: translateY(-3px) rotate(4deg);">C</span><span style="display: inline-block; transform: translateY(1px) rotate(-2deg);">H</span><span style="display: inline-block; transform: translateY(-1px) rotate(5deg);">I</span><span style="display: inline-block; transform: translateY(3px) rotate(-3deg);">R</span><span style="display: inline-block; transform: translateY(-2px) rotate(2deg);">E</span><span style="display: inline-block; transform: translateY(2px) rotate(-4deg);">R</span></span> ses <span style="display: inline-block; font-weight: 600; color: var(--color-text); letter-spacing: 0.04em;"><span style="display: inline-block; border-bottom: 1px solid var(--color-accent-400);">TEX</span><span style="display: inline-block; transform: translateY(3px); border-bottom: 1px solid var(--color-accent-400);">TES</span></span>, à les <span style="display: inline-block; padding: 1px 0.3em 2px; border-radius: 2px; color: #201f1d; background-color: #e6dcc6; background-image: repeating-linear-gradient(102deg, rgba(120, 96, 58, 0.09) 0 1px, transparent 1px 3px), repeating-linear-gradient(14deg, rgba(120, 96, 58, 0.07) 0 1px, transparent 1px 4px); box-shadow: 0 2px 6px -3px rgba(8, 7, 6, 0.6); transform: rotate(-1.1deg);">recoller</span> à les ré-écrire sous d’autres formes qu’on nomme «&nbsp;poésie visuelle&nbsp;».</p>
+      
+      <div data-amj-culmin="" data-amj-reveal="" style="position: relative; margin-top: clamp(10px, 1.4vw, 22px); padding-top: clamp(20px, 2.4vw, 36px); border-top: 1px solid color-mix(in srgb, var(--color-accent) 32%, transparent); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); gap: clamp(28px, 4vw, 76px); align-items: center;">
+        <blockquote style="margin: 0;">
+          <p style="margin: 0; font-family: var(--font-heading); font-weight: 300; font-size: clamp(28px, 4.5vw, 68px); line-height: 1.06; letter-spacing: -0.024em; max-width: 20em; text-wrap: pretty;">La <em style="font-weight: 400;">vérité</em> est <span style="display: inline-block; font-family: 'Rubik Distressed', var(--font-heading), cursive; font-size: 0.74em; letter-spacing: 0.005em; vertical-align: 0.02em; transform: translateY(4px) rotate(-2.4deg);">laide</span>. Nous avons <span style="color: var(--color-accent-300);">l’art</span> pour ne pas mourir de la <em style="font-weight: 400;">vérité</em>.</p>
+          <footer style="margin-top: clamp(20px, 2.4vw, 36px); display: flex; align-items: center; gap: 14px; font-size: 10.5px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-neutral-700);"><span aria-hidden="true" style="display: block; width: 34px; height: 1px; background: var(--color-accent-400);"></span>Nietzsche</footer>
+        </blockquote>
+        <figure style="margin: 0;">
+          <span style="display: block; border-radius: 18px; overflow: hidden; box-shadow: 0 60px 120px -46px rgba(8, 7, 6, 0.8), 0 12px 30px -14px rgba(8, 7, 6, 0.4);">
+            <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/La-verite-est-laide.jpg?fit=1100%2C1066&amp;ssl=1" alt="Vertige — collage d’après la phrase de Nietzsche" style="display: block; width: 100%; height: auto; filter: saturate(0.68) brightness(0.9) contrast(1.03) sepia(0.08);">
+          </span>
+          <figcaption style="margin-top: var(--space-3); font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase; color: #e0bd82;">Vertige — collage</figcaption>
+        </figure>
+      </div>
+  </div></section>
+
+  <section style="border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(40px, 6vw, 88px) clamp(18px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 5vw, 72px); align-items: start;">
+      <div data-amj-reveal="">
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(28px, 3.4vw, 46px); line-height: 1.06; margin: 0; max-width: 18em;">Vous avez une question ? Prenez contact&nbsp;!</h2>
+        <p style="font-size: 15.5px; line-height: 1.75; color: var(--color-neutral-800); max-width: 34em; margin: var(--space-4) 0 0;">Un mot sur un livre, une exposition, une collaboration éditoriale&nbsp;: écrivez, la réponse viendra.</p>
+      </div>
+      <form onSubmit="{{ onSubmit }}" style="display: grid; gap: var(--space-4);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--space-4);">
+          <div class="field"><label for="amj-nom">Nom</label><input class="input" id="amj-nom" name="nom" type="text" placeholder="Votre nom"></div>
+          <div class="field"><label for="amj-mail">Courriel</label><input class="input" id="amj-mail" name="mail" type="email" placeholder="vous@exemple.fr"></div>
+        </div>
+        <div class="field"><label for="amj-msg">Message</label><textarea class="input" id="amj-msg" name="message" rows="4" placeholder="Votre message" style="resize: vertical; font-family: var(--font-body);"></textarea></div>
+        <div style="display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap;">
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+          <span style="font-size: 14px; color: var(--color-accent-700);">{{ sentNote }}</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: var(--space-8) clamp(18px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-8); align-items: center; justify-content: space-between; font-size: 13px; color: var(--color-neutral-700);">
+      <span>© 2023 Tous droits réservés. Design – ML-Agency</span>
+      <nav style="display: flex; flex-wrap: wrap; gap: var(--space-4); letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px;">
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Facebook</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Twitter</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Google+</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Pinterest</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;autoplay&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Carrousel&quot;},&quot;slideSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:6,&quot;min&quot;:3,&quot;max&quot;:14,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Carrousel&quot;},&quot;showNumeral&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Mise en page&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { sent: false, creationsOpen: false };
+    this.heroRef = React.createRef();
+    this.layerRef = React.createRef();
+    this.marqueeRef = React.createRef();
+    this.numeralRef = React.createRef();
+    this.i = 0;
+  }
+
+  q(sel) {
+    const r = this.heroRef.current;
+    return r ? Array.from(r.querySelectorAll(sel)) : [];
+  }
+
+  paint() {
+    const slides = this.q("[data-slide]");
+    if (!slides.length) return;
+    this.i = ((this.i % slides.length) + slides.length) % slides.length;
+    slides.forEach((s, n) => {
+      const on = n === this.i;
+      s.style.opacity = on ? "1" : "0";
+      s.style.zIndex = on ? "2" : "1";
+      const img = s.querySelector("img");
+      if (img) {
+        img.style.animation = "none";
+        if (on) { void img.offsetWidth; img.style.animation = "amj-ken 11s ease-out both"; }
+      }
+    });
+    this.q("[data-thumb]").forEach((b, n) => {
+      const on = n === this.i;
+      b.style.opacity = on ? "1" : "0.55";
+      b.style.borderColor = on ? "var(--color-accent)" : "color-mix(in srgb, var(--color-neutral-100) 30%, transparent)";
+    });
+    const hero = this.heroRef.current;
+    const c = hero && hero.querySelector("[data-counter]");
+    if (c) c.textContent = String(this.i + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
+    const t = hero && hero.querySelector("[data-title-out]");
+    if (t) t.textContent = slides[this.i].getAttribute("data-title") || "";
+  }
+
+  go(n) { this.i = n; this.paint(); this.restart(); }
+
+  restart() {
+    clearInterval(this.timer);
+    if (this.props.autoplay ?? true) {
+      const secs = Math.max(2, this.props.slideSeconds ?? 6);
+      this.timer = setInterval(() => { this.i += 1; this.paint(); }, secs * 1000);
+    }
+  }
+
+  componentDidMount() {
+    try { const t = localStorage.getItem("amj-theme"); if (t) this.setState({ amjTheme: t }); } catch (e) {}
+    this.onAmjProgress = () => {
+      const d = document.documentElement;
+      const max = (d.scrollHeight - d.clientHeight) || 1;
+      const p = Math.min(100, Math.max(0, ((window.scrollY || d.scrollTop || 0) / max) * 100));
+      if (Math.abs(p - (this.state.amjProgress || 0)) > 0.4) this.setState({ amjProgress: p });
+    };
+    window.addEventListener("scroll", this.onAmjProgress, { passive: true });
+    this.onAmjProgress();
+    this.onAmjScroll = () => {
+      const s = (window.scrollY || document.documentElement.scrollTop || 0) > 60;
+      if (s !== this.state.amjScrolled) this.setState({ amjScrolled: s });
+    };
+    window.addEventListener("scroll", this.onAmjScroll, { passive: true });
+    this.onAmjScroll();
+    this.paint();
+    this.restart();
+
+    const hero = this.heroRef.current;
+    const layer = this.layerRef.current;
+    if (hero && layer) {
+      this.onMove = (e) => {
+        const r = hero.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        layer.style.transform = "translate(" + (x * -22).toFixed(1) + "px, " + (y * -18).toFixed(1) + "px)";
+      };
+      this.onOut = () => { layer.style.transform = "translate(0, 0)"; };
+      hero.addEventListener("pointermove", this.onMove);
+      hero.addEventListener("pointerleave", this.onOut);
+    }
+
+    const marquee = this.marqueeRef.current;
+    if (marquee) {
+      this.mEnter = () => { marquee.style.animationPlayState = "paused"; };
+      this.mLeave = () => { marquee.style.animationPlayState = "running"; };
+      marquee.addEventListener("pointerenter", this.mEnter);
+      marquee.addEventListener("pointerleave", this.mLeave);
+    }
+
+    const targets = Array.from(document.querySelectorAll("[data-amj-reveal]"));
+    if (targets.length && "IntersectionObserver" in window) {
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          const el = e.target;
+          if (!e.isIntersecting) {
+            if (e.boundingClientRect.bottom < 0) {
+              el.dataset.revealed = "1";
+              el.style.opacity = "";
+              this.io.unobserve(el);
+            }
+            return;
+          }
+          el.dataset.revealed = "1";
+          el.style.opacity = "";
+          el.style.animation = "amj-rise 900ms cubic-bezier(.2,.7,.2,1) both";
+          this.io.unobserve(el);
+        });
+      }, { rootMargin: "200px 0px 200px 0px", threshold: 0 });
+      targets.forEach((el) => { el.style.opacity = "0"; this.io.observe(el); });
+      this.safety = setTimeout(() => targets.forEach((el) => { if (!el.dataset.revealed) { el.dataset.revealed = "1"; el.style.opacity = ""; } }), 1200);
+      this.sweep = () => targets.forEach((el) => {
+        if (el.dataset.revealed) return;
+        if (el.getBoundingClientRect().top < window.innerHeight) { el.dataset.revealed = "1"; el.style.opacity = ""; this.io.unobserve(el); }
+      });
+      window.addEventListener("scroll", this.sweep, { passive: true });
+    }
+
+    if (this.numeralRef.current) {
+      this.onScroll = () => {
+        const el = this.numeralRef.current;
+        if (!el) return;
+        const r = el.getBoundingClientRect();
+        const p = (window.innerHeight / 2 - r.top) / window.innerHeight;
+        el.style.transform = "translateY(" + (p * -56).toFixed(1) + "px)";
+      };
+      window.addEventListener("scroll", this.onScroll, { passive: true });
+      this.onScroll();
+    }
+  }
+
+  componentWillUnmount() { window.removeEventListener("scroll", this.onAmjProgress); window.removeEventListener("scroll", this.onAmjScroll);
+    clearInterval(this.timer);
+    clearTimeout(this.safety);
+    if (this.io) this.io.disconnect();
+    if (this.sweep) window.removeEventListener("scroll", this.sweep);
+    if (this.onScroll) window.removeEventListener("scroll", this.onScroll);
+    const hero = this.heroRef.current;
+    if (hero && this.onMove) { hero.removeEventListener("pointermove", this.onMove); hero.removeEventListener("pointerleave", this.onOut); }
+    const m = this.marqueeRef.current;
+    if (m && this.mEnter) { m.removeEventListener("pointerenter", this.mEnter); m.removeEventListener("pointerleave", this.mLeave); }
+  }
+
+  renderVals() {
+    return {
+      heroRef: this.heroRef,
+      layerRef: this.layerRef,
+      marqueeRef: this.marqueeRef,
+      numeralRef: this.numeralRef,
+      showNumeral: this.props.showNumeral ?? true,
+      theme: this.state.amjTheme || "dark",
+      heroFade: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, rgba(11, 10, 9, 0) 0%, rgba(11, 10, 9, 0.45) 42%, rgba(11, 10, 9, 0.82) 72%, #0b0a09 100%)"
+        : "linear-gradient(180deg, rgba(11, 10, 9, 0) 0%, rgba(11, 10, 9, 0.5) 48%, rgba(11, 10, 9, 0.9) 78%, #0b0a09 100%)",
+      galleryPad: "clamp(28px, 4vw, 48px)",
+      afterGallery: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, #0b0a09 0%, rgba(11, 10, 9, 0) 100%)"
+        : "linear-gradient(180deg, #0b0a09 0%, rgba(11, 10, 9, 0.72) 34%, rgba(243, 242, 240, 0.7) 76%, #f3f2f0 100%)",
+      galleryFade: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, #0b0a09 0%, rgba(11, 10, 9, 0.55) 45%, rgba(11, 10, 9, 0) 100%)"
+        : "#0b0a09",
+      ground: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, #080807 0%, #1d1a17 14%, #0b0a0a 34%, #221e1a 54%, #0a0a09 74%, #1e1b18 90%, #0b0a09 100%)"
+        : "linear-gradient(180deg, #f5f4f2 0%, #efedea 46%, #f3f2f0 100%)",
+      themeIcon: (this.state.amjTheme || "dark") === "dark" ? "☀" : "☾",
+      progress: (this.state.amjProgress || 0).toFixed(1) + "%",
+      toggleTheme: () => { const next = (this.state.amjTheme || "dark") === "dark" ? "light" : "dark"; this.setState({ amjTheme: next }); try { localStorage.setItem("amj-theme", next); } catch (e) {} },
+      headPad: "clamp(18px, 2.4vw, 30px) clamp(16px, 4vw, 56px) clamp(30px, 3.4vw, 44px)",
+      headBg: "transparent",
+      headShadow: "none",
+      headBlur: "none",
+      barBg: this.state.amjScrolled ? "rgba(253, 250, 244, 0.62)" : "transparent",
+      sheetDisplay: this.state.amjMenu ? "flex" : "none",
+      menuExpanded: this.state.amjMenu ? "true" : "false",
+      toggleMenu: () => this.setState((s) => ({ amjMenu: !s.amjMenu })),
+      toggleBorder: this.state.amjScrolled ? "rgba(227, 207, 174, 0.7)" : "transparent",
+      barBorder: this.state.amjScrolled ? "rgba(227, 207, 174, 0.6)" : "transparent",
+      barShadow: this.state.amjScrolled ? "0 16px 36px -24px rgba(8, 7, 6, 0.45)" : "none",
+      barBlur: this.state.amjScrolled ? "blur(16px) saturate(1.08)" : "none",
+      ink: this.state.amjScrolled ? "#444141" : "#fdfaf4",
+      logoDark: this.state.amjScrolled ? 0 : 1,
+      logoLight: this.state.amjScrolled ? 1 : 0,
+      logoW: "clamp(48px, 4.4vw, 60px)",
+      creationsOpen: this.state.creationsOpen,
+      openCreations: () => this.setState({ creationsOpen: true }),
+      closeCreations: () => this.setState({ creationsOpen: false }),
+      toggleCreations: () => this.setState((s) => ({ creationsOpen: !s.creationsOpen })),
+      onThumb: (e) => {
+        const b = e.currentTarget.closest("[data-thumb]");
+        if (b) this.go(parseInt(b.getAttribute("data-thumb"), 10));
+      },
+      sentNote: this.state.sent ? "Merci, votre message est parti." : "",
+      onSubmit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

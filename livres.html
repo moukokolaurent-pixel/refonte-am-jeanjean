@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Livres — Anne-Marie Jeanjean</title>
+<link rel="icon" href="logo-amj-noir.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="_ds/classical-44a30086-e05d-4482-8c91-7ac9ddcb6cef/styles.css">
+<script src="_ds/classical-44a30086-e05d-4482-8c91-7ac9ddcb6cef/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+  * { box-sizing: border-box; }
+  img { display: block; max-width: 100%; }
+  a { color: var(--color-accent-700); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--color-accent-900); }
+  @keyframes amj-head { from { padding-top: clamp(22px, 3vw, 40px); padding-bottom: clamp(22px, 3vw, 40px); } to { padding-top: 12px; padding-bottom: 12px; } }
+  @keyframes amj-bar { from { background: rgba(253, 250, 244, 0); box-shadow: 0 0 0 rgba(32, 31, 29, 0); padding-top: 13px; padding-bottom: 13px; } to { background: rgba(253, 250, 244, 0.95); box-shadow: 0 3px 18px rgba(32, 31, 29, 0.13); padding-top: 8px; padding-bottom: 8px; } }
+  @keyframes amj-ink { from { color: #fdfaf4; } to { color: #444141; } }
+  @keyframes amj-ink-strong { from { color: #fdfaf4; } to { color: #201f1d; } }
+  @keyframes amj-logo { from { font-size: 25px; color: #fdfaf4; } to { font-size: 20px; color: #201f1d; } }
+  @keyframes amj-rule { from { background: #fdfaf4; } to { background: #b68235; } }
+  @keyframes amj-logo-size { from { width: 64px; } to { width: 48px; } }
+  @keyframes amj-logo-out { from { opacity: 1; } to { opacity: 0; } }
+  @keyframes amj-logo-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes amj-ink-bg { from { background: #fdfaf4; } to { background: #201f1d; } }
+  @keyframes amj-brd { from { border-color: rgba(253, 250, 244, 0.5); } to { border-color: #e3cfae; } }
+  [data-amj-hero] {
+    --color-bg: #171614; --color-surface: #1f1d1a; --color-text: #f6f3ed;
+    --color-divider: rgba(246, 243, 237, 0.14);
+    --color-neutral-100: #f8f6f1; --color-neutral-200: #ece9e3; --color-neutral-300: #dbd7d0;
+    --color-neutral-400: #bdb9b2; --color-neutral-700: #bdb7ae; --color-neutral-800: #ddd8d0; --color-neutral-900: #f2efe9;
+    --color-accent-100: rgba(182, 130, 53, 0.16); --color-accent-200: rgba(182, 130, 53, 0.26);
+    --color-accent-300: #e0bd82; --color-accent-400: #d1a761; --color-accent-700: #dcb677; --color-accent-800: #e8cb9c;
+    background: #171614; color: #f6f3ed;
+  }
+  [data-amj-theme] > section, [data-amj-theme] > footer { position: relative; z-index: 1; }
+  [data-amj-theme="dark"] {
+    --color-bg: #171614; --color-surface: #1f1d1a; --color-text: #f6f3ed;
+    --color-divider: rgba(246, 243, 237, 0.14);
+    --color-neutral-100: #1f1d1a; --color-neutral-200: #2a2724; --color-neutral-300: #3a3733;
+    --color-neutral-400: #6f6a63; --color-neutral-500: #8d877f; --color-neutral-600: #a9a39a;
+    --color-neutral-700: #bdb7ae; --color-neutral-800: #ddd8d0; --color-neutral-900: #f2efe9;
+    --color-accent-100: rgba(182, 130, 53, 0.16); --color-accent-200: rgba(182, 130, 53, 0.26);
+    --color-accent-300: #e0bd82; --color-accent-400: #d1a761;
+    --color-accent-600: #c08f3e; --color-accent-700: #dcb677; --color-accent-800: #e8cb9c; --color-accent-900: #f2e2c6;
+  }
+  [data-amj-theme="dark"] .card, [data-amj-theme="dark"] .input, [data-amj-theme="dark"] .dialog { background: #1f1d1a; }
+  @keyframes amj-dust { 0% { transform: translate3d(0,0,0); opacity: 0; } 12% { opacity: var(--o, 0.5); } 88% { opacity: var(--o, 0.5); } 100% { transform: translate3d(var(--dx, 30px), -120px, 0); opacity: 0; } }
+  @keyframes amj-grain { 0%,100% { background-position: 0 0; } 50% { background-position: 32px 24px; } }
+  @keyframes amj-slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  [data-amj-theme="dark"] [data-amj-hero] { background-color: transparent; }
+  [data-amj-theme] { --amj-red: #b4372a; }
+  [data-amj-theme="dark"] { --amj-red: #d9553f; }
+  [data-amj-hero] { --amj-red: #d9553f; }
+  [data-amj-theme="dark"] .input { color: var(--color-text); border-color: var(--color-divider); }
+  [data-amj-theme="dark"] .input::placeholder { color: #a9a39a; }
+  [data-amj-theme="dark"] .card { border-color: var(--color-divider); }
+  [data-amj-theme="dark"] .plate { background: #24211e; }
+  [data-amj-theme="dark"] .hr { border-color: var(--color-divider); }
+  [data-amj-theme="dark"] figcaption, [data-amj-theme="dark"] .card-meta { color: var(--color-neutral-800); }
+  [data-amj-theme="dark"] label { color: var(--color-neutral-800); }
+  [data-amj-theme="dark"] audio { border-radius: 999px; background: #2a2724; color-scheme: dark; }
+  [data-amj-herogrid] { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr); gap: clamp(28px, 4vw, 68px); align-items: center; }
+  @media (max-width: 1099px) { [data-amj-herogrid] { grid-template-columns: 1fr !important; gap: clamp(24px, 5vw, 40px) !important; } [data-amj-herofig] { max-width: 320px; } }
+  @media (max-width: 1039px) {
+    [data-amj-bar] { max-width: fit-content !important; margin-left: auto !important; margin-right: auto !important; gap: var(--space-4) !important; }
+    [data-amj-toggle] { margin-left: 0 !important; }
+  }
+  @media (max-width: 1039px) {
+    [data-amj-nav] { display: none !important; }
+    [data-amj-burger] { display: inline-flex !important; }
+  }
+  @media (min-width: 1040px) { [data-amj-sheet] { display: none !important; } }
+  @media (max-width: 560px) { [data-amj-bookgrid] { grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)) !important; gap: 18px var(--space-4) !important; } }
+  @keyframes amj-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes amj-slip { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: none; } }
+  @keyframes amj-ken { from { transform: scale(1.02); } to { transform: scale(1.14); } }
+  @keyframes amj-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes amj-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes amj-drift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  @keyframes amj-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+  @keyframes amj-glow { 0%,100% { opacity: 0.55; } 50% { opacity: 0.9; } }
+</style>
+<script src="header.js"></script>
+</helmet>
+
+<div data-amj-theme="{{ theme }}" style="width: 100%; min-height: 100vh; overflow-x: clip; position: relative; background: {{ ground }}; color: var(--color-text); transition: background 500ms ease, color 500ms ease;">
+  <div aria-hidden="true" style="position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;">
+    <div style="position: absolute; inset: 0; opacity: 0.5; background-image: radial-gradient(circle at 1px 1px, var(--color-accent-200) 0.6px, transparent 0.6px); background-size: 4px 4px; mix-blend-mode: overlay; animation: amj-grain 9s ease-in-out infinite;"></div>
+    <span style="position: absolute; left: 0%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -18px; opacity: 0; animation: amj-dust 26s 0s linear infinite;"></span><span style="position: absolute; left: 10.3%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 21px; opacity: 0; animation: amj-dust 35s 2.4s linear infinite;"></span><span style="position: absolute; left: 20.6%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -24px; opacity: 0; animation: amj-dust 44s 4.8s linear infinite;"></span><span style="position: absolute; left: 18.9%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 27px; opacity: 0; animation: amj-dust 53s 7.199999999999999s linear infinite;"></span><span style="position: absolute; left: 29.2%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -30px; opacity: 0; animation: amj-dust 62s 9.6s linear infinite;"></span><span style="position: absolute; left: 39.5%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 33px; opacity: 0; animation: amj-dust 26s 12s linear infinite;"></span><span style="position: absolute; left: 37.8%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -36px; opacity: 0; animation: amj-dust 35s 14.399999999999999s linear infinite;"></span><span style="position: absolute; left: 48.1%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 39px; opacity: 0; animation: amj-dust 44s 16.8s linear infinite;"></span><span style="position: absolute; left: 58.4%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -42px; opacity: 0; animation: amj-dust 53s 19.2s linear infinite;"></span><span style="position: absolute; left: 56.699999999999996%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 45px; opacity: 0; animation: amj-dust 62s 21.599999999999998s linear infinite;"></span><span style="position: absolute; left: 67%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -48px; opacity: 0; animation: amj-dust 26s 2s linear infinite;"></span><span style="position: absolute; left: 77.3%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 51px; opacity: 0; animation: amj-dust 35s 4.399999999999999s linear infinite;"></span><span style="position: absolute; left: 75.6%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.18; --dx: -54px; opacity: 0; animation: amj-dust 44s 6.799999999999997s linear infinite;"></span><span style="position: absolute; left: 85.89999999999999%; bottom: -10px; width: 2px; height: 2px; border-radius: 50%; background: var(--color-accent-400); --o: 0.25; --dx: 57px; opacity: 0; animation: amj-dust 53s 9.2s linear infinite;"></span><span style="position: absolute; left: 96.2%; bottom: -10px; width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent-400); --o: 0.32; --dx: -60px; opacity: 0; animation: amj-dust 62s 11.600000000000001s linear infinite;"></span><span style="position: absolute; left: 94.5%; bottom: -10px; width: 1px; height: 1px; border-radius: 50%; background: var(--color-accent-400); --o: 0.39; --dx: 63px; opacity: 0; animation: amj-dust 26s 14s linear infinite;"></span>
+  </div>
+  <div aria-hidden="true" style="position: fixed; left: 0; top: 0; width: 2px; height: {{ progress }}; background: linear-gradient(180deg, var(--color-accent-400), var(--color-accent-700)); opacity: 0.5; z-index: 31; pointer-events: none; transition: height 120ms linear;"></div>
+  
+
+  <header data-amj-header="" style="position: fixed; top: 0; left: 0; right: 0; z-index: 30; padding: {{ headPad }} clamp(16px, 4vw, 56px); background: {{ headBg }}; box-shadow: {{ headShadow }}; backdrop-filter: {{ headBlur }}; -webkit-backdrop-filter: {{ headBlur }}; transition: padding 420ms cubic-bezier(.2,.7,.2,1), background 420ms ease, box-shadow 420ms ease;">
+    <div data-amj-bar="" style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: var(--space-6); justify-content: space-between; padding: 8px clamp(14px, 1.8vw, 22px); border: 1px solid {{ barBorder }}; border-radius: 999px; background: {{ barBg }}; box-shadow: {{ barShadow }}; backdrop-filter: {{ barBlur }}; -webkit-backdrop-filter: {{ barBlur }}; transition: background 420ms ease, border-color 420ms ease, box-shadow 420ms ease, backdrop-filter 420ms ease;">
+      <a href="index.html" aria-label="Accueil" style="display: flex; flex-shrink: 0; align-items: center; text-decoration: none;">
+        <span data-amj-logo="" style="position: relative; display: block; width: {{ logoW }}; aspect-ratio: 1; transition: width 420ms cubic-bezier(.2,.7,.2,1);"><img src="logo-amj-noir.png" alt="Anne-Marie Jeanjean" style="position: absolute; inset: 0; border-radius: 14px; width: 100%; height: 100%; object-fit: contain; opacity: {{ logoDark }}; transition: opacity 420ms ease;"><img src="logo-amj-blanc.png" alt="" aria-hidden="true" style="position: absolute; inset: 0; border-radius: 14px; width: 100%; height: 100%; object-fit: contain; opacity: {{ logoLight }}; transition: opacity 420ms ease;"></span>
+      </a>
+      <button type="button" onClick="{{ toggleTheme }}" data-amj-toggle="" aria-label="Basculer clair / sombre" title="Clair / sombre" style="flex-shrink: 0; order: 3; margin-left: auto; width: 32px; height: 32px; display: inline-grid; place-items: center; border: 1px solid {{ toggleBorder }}; border-radius: 50%; background: none; color: {{ ink }}; font-size: 13px; line-height: 1; cursor: pointer; padding: 0; transition: color 420ms ease, border-color 420ms ease;" style-hover="border-color: var(--color-accent);">{{ themeIcon }}</button>
+      <nav data-amj-nav="" style="order: 2; display: flex; flex: 1 1 auto; min-width: 0; justify-content: flex-end; align-items: baseline; gap: 10px 26px; flex-wrap: wrap; font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase;">
+        <a href="index.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">L’auteure</span></a>
+        <div onMouseEnter="{{ openCreations }}" onMouseLeave="{{ closeCreations }}" style="position: relative;">
+          <button type="button" onClick="{{ toggleCreations }}" aria-haspopup="true" style="display: inline-flex; align-items: center; gap: 5px; font: inherit; letter-spacing: inherit; text-transform: inherit; color: {{ ink }}; background: none; border: 0; border-bottom: 1px solid var(--color-accent); padding: 0 0 4px; cursor: pointer; transition: color 220ms;" style-hover="color: var(--color-accent-700);">Créations<span style="display: inline-block; font-size: 9px;">▾</span></button>
+          <sc-if value="{{ creationsOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position: absolute; top: 100%; left: 50%; transform: translateX(-50%); padding-top: 14px;">
+              <div style="min-width: 250px; background: var(--color-surface); border: 1px solid var(--color-divider); border-radius: var(--radius-md); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34); padding: var(--space-2) 0; display: grid; animation: amj-rise 260ms cubic-bezier(.2,.7,.2,1) both;">
+                <span style="padding: 4px var(--space-4) 8px; font-size: 9.5px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-accent-700);">Créations</span>
+                <a href="livres.html" style="display: block; padding: 9px var(--space-4); color: var(--color-accent-800); background: var(--color-accent-100); text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid var(--color-accent); transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Livres</a>
+                <a href="expositions.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Expositions</a>
+                <a href="poesie.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Poésies visuelles &amp; auditives</a>
+                <a href="revue-textuerre.html" style="display: block; padding: 9px var(--space-4); color: var(--color-neutral-800); background: transparent; text-decoration: none; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; border-left: 1px solid transparent; transition: color 220ms, background 220ms, border-color 220ms;" style-hover="color: var(--color-accent-800); background: var(--color-accent-100); border-left-color: var(--color-accent);">Revue Textuerre</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="la-saveur-du-vent.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">La saveur du vent</span></a>
+        <a href="tardigradeditions.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Tardigradéditions</span></a>
+        <a href="actualites.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Actualités</span></a>
+        <a href="contact.html" data-nav="" style="position: relative; color: {{ ink }}; text-decoration: none; padding-bottom: 4px; transition: color 420ms ease;" style-hover="color: var(--color-accent-700);"><span data-amj-rule="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; transition: transform 340ms cubic-bezier(.2,.7,.2,1); pointer-events: none;"></span><span style="pointer-events: none;">Contact</span></a>
+      </nav>
+      <button type="button" data-amj-burger="" onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuExpanded }}" style="display: none; order: 4; flex-shrink: 0; margin-left: var(--space-3); width: 42px; height: 42px; align-items: center; justify-content: center; background: none; border: 1px solid {{ toggleBorder }}; border-radius: 50%; cursor: pointer; padding: 0;">
+        <span style="display: grid; gap: 4px;"><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: transform 320ms;"></span><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: opacity 200ms;"></span><span data-amj-bl="" style="display: block; width: 16px; height: 1px; background: #fdfaf4; transition: transform 320ms;"></span></span>
+      </button>
+    </div>
+    <div data-amj-sheet="" style="max-width: 1100px; margin: 10px auto 0; display: {{ sheetDisplay }}; flex-direction: column; gap: 2px; padding: var(--space-4); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34);">
+      <a href="index.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">L’auteure</a>
+      <a href="livres.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Livres</a>
+      <a href="expositions.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Expositions</a>
+      <a href="poesie.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Poésies visuelles &amp; auditives</a>
+      <a href="revue-textuerre.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3) 13px var(--space-6); color: var(--color-neutral-800); text-decoration: none; font-family: var(--font-heading); font-size: 19px; border-bottom: 1px solid var(--color-divider);">Revue Textuerre</a>
+      <a href="la-saveur-du-vent.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">La saveur du vent</a>
+      <a href="tardigradeditions.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Tardigradéditions</a>
+      <a href="actualites.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Actualités</a>
+      <a href="contact.html" data-nav="" data-sheet-link="" style="padding: 13px var(--space-3); color: var(--color-text); text-decoration: none; font-family: var(--font-heading); font-size: 22px; border-bottom: 1px solid var(--color-divider);">Contact</a>
+    </div>
+
+  </header>
+
+  <section data-amj-hero="" style="position: relative; min-height: clamp(560px, 62vh, 680px); overflow: hidden;">
+      <div aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; height: 340px; z-index: 0; pointer-events: none; background: linear-gradient(180deg, #000 0%, #000 32%, rgba(0, 0, 0, 0.78) 58%, rgba(0, 0, 0, 0.34) 80%, rgba(0, 0, 0, 0) 100%);"></div>
+
+    
+    <div style="position: relative; z-index: 3; max-width: 1440px; margin: 0 auto; padding: clamp(158px, 20vh, 210px) clamp(18px, 4vw, 56px) clamp(56px, 7vw, 96px);">
+    <span aria-hidden="true" style="position: absolute; left: clamp(8px, 2vw, 32px); top: clamp(128px, 17vh, 188px); font-family: var(--font-heading); font-style: italic; font-weight: 300; font-size: clamp(120px, 22vw, 340px); line-height: 0.8; letter-spacing: -0.04em; color: color-mix(in srgb, var(--color-accent) 15%, transparent); pointer-events: none; user-select: none; white-space: nowrap;">Livres</span>
+    <span aria-hidden="true" style="position: absolute; right: 8%; top: 10%; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--color-accent-300) 55%, transparent), transparent 70%); filter: blur(30px); pointer-events: none; animation: amj-glow 9s ease-in-out infinite;"></span>
+    <div data-amj-herogrid="">
+      <div>
+    
+    
+    
+    <h1 style="margin: clamp(14px, 2vw, 24px) 0 0; font-family: var(--font-heading); font-weight: 500; font-size: clamp(42px, 7vw, 104px); line-height: 0.92; letter-spacing: -0.025em; max-width: 15em; position: relative; z-index: 2; color: var(--color-text); animation: amj-slip 1100ms 120ms cubic-bezier(.16,.84,.24,1) both;">Ouvrages d’Anne-marie <em style="font-weight: 300;">jeanjean</em></h1>
+    <div style="margin-top: clamp(24px, 3vw, 40px); max-width: 32em; font-family: var(--font-heading); font-size: clamp(20px, 2.1vw, 28px); line-height: 1.36; color: var(--color-neutral-800); position: relative; z-index: 2; padding-left: var(--space-4); border-left: 2px solid var(--color-accent-400); animation: amj-rise 900ms 520ms ease-out both;">Poésie, fictions éclatées, livres d’artiste et traductions à quatre mains — 39 titres, de <em>Via Scavi</em> (1981) à <em>Casse-tête</em>.</div>
+  
+      </div>
+      <figure data-amj-deco="" data-depth="8" data-amj-herofig="" style="margin: 0; position: relative; animation: amj-rise 1000ms 420ms ease-out both;"><span style="display: block; position: relative; border-radius: 18px; overflow: hidden; box-shadow: 0 60px 120px -46px rgba(8, 7, 6, 0.78), 0 12px 30px -14px rgba(8, 7, 6, 0.38);"><img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/la-mysterieuse.jpg?w=900&amp;ssl=1" alt="La Mystérieuse — livre d’artiste" style="display: block; width: 100%; aspect-ratio: 4 / 5; max-height: clamp(300px, 44vh, 500px); object-fit: cover; filter: saturate(0.62) brightness(0.9) contrast(1.04) sepia(0.12);"><span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(205deg, rgba(224, 189, 130, 0.16), rgba(8, 7, 6, 0) 42%, rgba(8, 7, 6, 0.5)); pointer-events: none;"></span></span><figcaption style="margin-top: var(--space-3); font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase; color: #e0bd82;">La Mystérieuse — livre d’artiste</figcaption></figure>
+    </div>
+  </div>
+  </section>
+
+  <section style="position: relative; max-width: 1440px; margin: 0 auto; padding: clamp(36px, 5vw, 72px) clamp(18px, 4vw, 56px) clamp(48px, 6vw, 96px);">
+    
+    <div style="position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-6); border-bottom: 1px solid var(--color-divider); padding-bottom: var(--space-3);">
+      <h2 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(34px, 4.2vw, 62px); line-height: 1; letter-spacing: -0.025em;">La bibliothèque</h2>
+        
+      <nav aria-label="Collections" style="display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin-left: auto; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;">
+        <sc-for list="{{ groups }}" as="g" hint-placeholder-count="0">
+          <button type="button" onClick="{{ g.jump }}" style="font: inherit; letter-spacing: inherit; text-transform: inherit; background: none; border: 0; border-bottom: 1px solid {{ g.tabBorder }}; color: {{ g.tabColor }}; padding: 0 0 4px; cursor: pointer; transition: color 200ms, border-color 200ms;" style-hover="color: var(--color-accent-700);">{{ g.label }} <span style="font-variant-numeric: tabular-nums; color: var(--color-neutral-700);">{{ g.count }}</span></button>
+        </sc-for>
+      </nav>
+    </div>
+    
+
+    <p style="position: relative; z-index: 1; margin: var(--space-3) 0 0; font-size: 12.5px; line-height: 1.5; color: var(--color-neutral-700); max-width: 30em;">Choisissez une collection, puis une couverture.</p>
+    <div style="position: relative; z-index: 1; margin-top: clamp(20px, 2.4vw, 32px); display: grid;">
+      <sc-for list="{{ groups }}" as="g" hint-placeholder-count="0">
+        <div id="{{ g.id }}" data-amj-row="" style="border-top: 1px solid var(--color-divider);">
+          <button type="button" onClick="{{ g.toggle }}" aria-expanded="{{ g.open }}" style="width: 100%; display: grid; grid-template-columns: 3.2em minmax(0, 1fr) max-content; align-items: center; gap: var(--space-4); padding: clamp(22px, 3vw, 40px) 0; background: none; border: 0; cursor: pointer; text-align: left; color: inherit; font: inherit; transition: padding-left 400ms cubic-bezier(.2,.7,.2,1);" style-hover="padding-left: var(--space-3);">
+            <span style="font-family: var(--font-heading); font-weight: 300; font-size: clamp(20px, 2vw, 27px); color: var(--color-accent-700); font-variant-numeric: tabular-nums;">{{ g.num }}</span>
+            <span style="display: grid; gap: var(--space-2); min-width: 0;">
+              <span style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(38px, 6.4vw, 96px); line-height: 0.95; letter-spacing: -0.03em; color: {{ g.titleColor }}; transition: color 300ms;">{{ g.label }}</span>
+              <span style="font-size: clamp(14px, 1.15vw, 16.5px); line-height: 1.5; color: var(--color-neutral-800); max-width: 44em; text-wrap: pretty;">{{ g.tagline }}</span>
+            </span>
+            <span style="display: flex; align-items: center; gap: var(--space-3); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-neutral-700); white-space: nowrap;"><span style="font-variant-numeric: tabular-nums;">{{ g.count }} titres</span><span style="display: inline-block; width: 34px; height: 34px; border: 1px solid var(--color-divider); border-radius: 50%; display: inline-grid; place-items: center; color: var(--color-accent-700); font-size: 18px; line-height: 1; transform: rotate({{ g.chev }}); transition: transform 400ms cubic-bezier(.2,.7,.2,1);">+</span></span>
+          </button>
+          <sc-if value="{{ g.open }}" hint-placeholder-val="{{ false }}">
+            <div data-amj-bookgrid="" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr)); gap: clamp(20px, 3vw, 40px) var(--space-6); padding: 0 0 clamp(32px, 4vw, 56px) clamp(0px, 4vw, 64px); align-items: start;">
+              <sc-for list="{{ g.books }}" as="b" hint-placeholder-count="0">
+                <button type="button" onClick="{{ b.open }}" aria-label="Ouvrir {{ b.title }}" style="display: grid; gap: var(--space-3); padding: 0; background: none; border: 0; cursor: pointer; text-align: left; color: inherit; font: inherit; opacity: 0; animation: amj-rise 700ms cubic-bezier(.2,.7,.2,1) both; animation-delay: {{ b.delay }};">
+                  <span style="display: block; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 18px; box-shadow: 0 34px 70px -34px rgba(8, 7, 6, 0.68), 0 6px 16px -8px rgba(8, 7, 6, 0.3); transition: transform 500ms cubic-bezier(.2,.7,.2,1), box-shadow 500ms;" style-hover="transform: translateY(-8px) scale(1.04); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34);">
+                    {{ b.img }}
+                  </span>
+                  <span style="display: grid; gap: 2px;">
+                    <span style="font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-300); font-variant-numeric: tabular-nums;">{{ b.num }}</span>
+                    <span style="font-family: var(--font-heading); font-weight: 600; font-size: 18px; line-height: 1.1;">{{ b.title }}</span>
+                  </span>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+    <div class="dialog-backdrop" onClick="{{ close }}" style="position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: clamp(12px, 3vw, 40px); background: color-mix(in srgb, #171614 78%, transparent); backdrop-filter: blur(8px); animation: amj-rise 300ms ease-out both;">
+      <div class="dialog" role="dialog" aria-modal="true" onClick="{{ stop }}" style="position: relative; width: min(1040px, 100%); max-height: 100%; overflow: auto; background: linear-gradient(170deg, var(--color-surface) 0%, var(--color-neutral-100) 100%); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(20px, 3vw, 48px); padding: clamp(20px, 3vw, 48px);">
+        <button type="button" onClick="{{ close }}" aria-label="Fermer" class="btn btn-ghost btn-icon" style="position: absolute; top: 12px; right: 12px; z-index: 2;">✕</button>
+        <figure style="margin: 0; display: grid; place-items: center;">
+          <sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}"><span class="plate" style="display: block; border-radius: 18px; overflow: hidden; width: min(100%, 380px); box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34); ">{{ cur.img }}</span></sc-if>
+        </figure>
+        <div style="display: grid; gap: var(--space-4); align-content: center; min-width: 0;">
+          <span style="font-size: 11.5px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-accent-700);">{{ cur.catLabel }} · {{ cur.num }}</span>
+          <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(30px, 3.6vw, 52px); line-height: 1.02; letter-spacing: -0.015em;">{{ cur.title }}</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.72; color: var(--color-neutral-800); text-wrap: pretty;">{{ cur.descNodes }}</p>
+          <sc-if value="{{ cur.hasMeta }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--color-divider); font-size: 13px; line-height: 1.6; color: var(--color-neutral-700);">{{ cur.metaNode }}</p></sc-if>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); margin-top: var(--space-2);">
+            <sc-if value="{{ cur.hasLink }}" hint-placeholder-val="{{ false }}"><a class="btn btn-primary" href="{{ cur.link }}" target="_blank" rel="noopener">{{ cur.cta }}</a></sc-if>
+            <span style="margin-left: auto; display: flex; gap: var(--space-2);">
+              <button type="button" class="btn btn-ghost btn-icon" onClick="{{ prev }}" aria-label="Livre précédent">‹</button>
+              <button type="button" class="btn btn-ghost btn-icon" onClick="{{ next }}" aria-label="Livre suivant">›</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <section data-amj-hero="" style="position: relative; color: var(--color-text); overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; inset: 0; z-index: 0;">
+      <img src="https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/portrait-au-cerisier-rosebmartin.jpg?w=1600&amp;ssl=1" alt="" style="display: block; width: 100%; height: auto; max-height: 100%; filter: grayscale(0.54) contrast(1.04) brightness(0.66) blur(0.9px);">
+      <span style="position: absolute; inset: 0; background: linear-gradient(96deg, rgba(9, 8, 7, 0.93) 0%, rgba(9, 8, 7, 0.87) 44%, rgba(9, 8, 7, 0.63) 76%, rgba(9, 8, 7, 0.48) 100%);"></span>
+      <span style="position: absolute; left: 0; right: 0; top: 30%; bottom: 0; background: {{ shanFade }};"></span>
+    </div>
+    <div style="position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: clamp(64px, 9vw, 128px) clamp(18px, 4vw, 56px) clamp(40px, 5vw, 64px);">
+      
+      <div data-amj-reveal="">
+        <p style="margin: 0; font-size: 11.5px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--color-accent-300);">Anne-Marie Jeanjean et Shanshan Sun</p>
+        <h2 style="margin: var(--space-4) 0 0; font-family: var(--font-heading); font-weight: 300; font-size: clamp(32px, 4.6vw, 68px); line-height: 1.02; letter-spacing: -0.02em; max-width: 20em;">Ou une rencontre et ses imprévus</h2>
+        <p style="margin: var(--space-6) 0 0; font-size: 16.5px; line-height: 1.78; color: var(--color-neutral-800); max-width: 44em;"><strong style="font-weight: 600; color: var(--color-text);">Shanshan Sun</strong>, <em>calligraphe, poète, peintre</em>. Shan Shan Sun est une figure à Montpellier. Opposant au régime communiste, il est aussi l’un des huit calligraphes diplômés en Europe et le fondateur d’un nouveau style : la calligraphie libre.</p>
+        <blockquote style="margin: var(--space-6) 0 0; padding-left: var(--space-4); border-left: 1px solid var(--color-accent-400); font-family: var(--font-heading); font-style: italic; font-size: clamp(19px, 1.8vw, 26px); line-height: 1.48; color: var(--color-text); max-width: 42em;">« De conversations en conversations, depuis plus de vingt ans, nos causeries nous ont amenés à écrire des livres. D’une poète pratiquant l’écriture visuelle et un peintre-calligraphe… quoi de surprenant ? C’est l’écriture sous ses différentes formes ainsi que l’Histoire qui en ont été nos fils conducteurs. Le projet de traduire s’est installé par la suite. Mais n’est-ce pas la dynamique de l’échange, dans l’attentive et mutuelle curiosité, qui fait tout le sel et la richesse de cette expérience périlleuse qu’est la traduction ? »<footer style="margin-top: var(--space-3); font-style: normal; font-family: var(--font-body); font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--color-accent-300);">A.M.J.</footer></blockquote>
+      <div style="margin-top: clamp(24px, 3vw, 40px); display: flex; align-items: center; gap: var(--space-4);">
+        <span data-amj-seal="" style="display: inline-grid; place-items: center; width: 52px; height: 52px; border: 1px solid var(--amj-red); border-radius: 14px; font-family: 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', SimSun, 'Hiragino Mincho ProN', serif; font-size: 25px; line-height: 1; color: var(--amj-red); ">印</span>
+        <span style="font-size: 10.5px; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(224, 189, 130, 0.78);">Calligraphie libre</span>
+      </div>
+      </div>
+    </div>
+    <div id="quatre-mains" style="position: relative; z-index: 1; max-width: 1440px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 56px) clamp(56px, 8vw, 112px);">
+      <div style="display: flex; align-items: baseline; gap: var(--space-4); border-top: 1px solid rgba(248, 246, 241, 0.2); padding-top: var(--space-6); margin-bottom: clamp(24px, 3vw, 40px);">
+        <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 500; font-size: clamp(21px, 2.1vw, 29px); line-height: 1.05; color: var(--color-text);">Les livres à quatre mains</h3>
+        <span style="margin-left: auto; font-size: 11.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-300);">Cliquez pour ouvrir</span>
+      </div>
+      <div data-amj-bookgrid="" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: clamp(20px, 3vw, 40px) var(--space-6); align-items: start;">
+        <sc-for list="{{ shanBooks }}" as="b" hint-placeholder-count="0">
+          <button type="button" onClick="{{ b.open }}" aria-label="Ouvrir {{ b.title }}" style="display: grid; gap: var(--space-3); padding: 0; background: none; border: 0; cursor: pointer; text-align: left; color: inherit; font: inherit;">
+            <span style="display: block; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 18px; box-shadow: 0 52px 110px -40px rgba(8, 7, 6, 0.7), 0 10px 26px -12px rgba(8, 7, 6, 0.34); transition: transform 500ms cubic-bezier(.2,.7,.2,1), box-shadow 500ms;" style-hover="transform: translateY(-8px) scale(1.04);">
+              {{ b.img }}
+            </span>
+            <span style="display: grid; gap: 2px;">
+              <span style="font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-300); font-variant-numeric: tabular-nums;">{{ b.num }}</span>
+              <span style="font-family: var(--font-heading); font-weight: 500; font-size: 18px; line-height: 1.1; color: var(--color-text);">{{ b.title }}</span>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section style="border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(40px, 6vw, 88px) clamp(18px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 5vw, 72px); align-items: start;">
+      <div data-amj-reveal="">
+        <h2 style="font-family: var(--font-heading); font-weight: 500; font-size: clamp(28px, 3.4vw, 46px); line-height: 1.06; margin: 0; max-width: 18em;">Vous avez une question ? Prenez contact&nbsp;!</h2>
+        <p style="font-size: 15.5px; line-height: 1.75; color: var(--color-neutral-800); max-width: 34em; margin: var(--space-4) 0 0;">Un mot sur un livre, une exposition, une collaboration éditoriale&nbsp;: écrivez, la réponse viendra.</p>
+      </div>
+      <form onSubmit="{{ onSubmit }}" style="display: grid; gap: var(--space-4);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--space-4);">
+          <div class="field"><label for="amj-nom">Nom</label><input class="input" id="amj-nom" name="nom" type="text" placeholder="Votre nom"></div>
+          <div class="field"><label for="amj-mail">Courriel</label><input class="input" id="amj-mail" name="mail" type="email" placeholder="vous@exemple.fr"></div>
+        </div>
+        <div class="field"><label for="amj-msg">Message</label><textarea class="input" id="amj-msg" name="message" rows="4" placeholder="Votre message" style="resize: vertical; font-family: var(--font-body);"></textarea></div>
+        <div style="display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap;">
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+          <span style="font-size: 14px; color: var(--color-accent-700);">{{ sentNote }}</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  <div aria-hidden="true" style="position: relative; height: clamp(190px, 26vh, 300px); overflow: hidden; pointer-events: none; mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%); -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);">
+    <div style="position: absolute; left: 0; top: 4%; display: flex; width: max-content; white-space: nowrap; font-family: var(--font-heading); font-style: italic; font-weight: 300; font-size: clamp(40px, 5.6vw, 86px); line-height: 1.34; color: rgba(182, 130, 53, 0.24); animation: amj-slide 165s linear infinite;"><span style="padding: 0 clamp(48px, 6vw, 110px);">cette danse de la lettre et de la langue, obstinément</span><span style="padding: 0 clamp(48px, 6vw, 110px);">cette danse de la lettre et de la langue, obstinément</span><span style="padding: 0 clamp(48px, 6vw, 110px);">cette danse de la lettre et de la langue, obstinément</span><span style="padding: 0 clamp(48px, 6vw, 110px);">cette danse de la lettre et de la langue, obstinément</span></div>
+    <div style="position: absolute; left: 0; top: 46%; display: flex; width: max-content; white-space: nowrap; font-family: var(--font-heading); font-style: italic; font-weight: 300; font-size: clamp(40px, 5.6vw, 86px); line-height: 1.34; color: rgba(182, 130, 53, 0.24); animation: amj-slide 205s linear infinite reverse;"><span style="padding: 0 clamp(48px, 6vw, 110px);">l’encre débordera toujours les mots</span><span style="padding: 0 clamp(48px, 6vw, 110px);">l’encre débordera toujours les mots</span><span style="padding: 0 clamp(48px, 6vw, 110px);">l’encre débordera toujours les mots</span><span style="padding: 0 clamp(48px, 6vw, 110px);">l’encre débordera toujours les mots</span></div>
+  
+  </div>
+  <footer style="border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1440px; margin: 0 auto; padding: var(--space-8) clamp(18px, 4vw, 56px); display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-8); align-items: center; justify-content: space-between; font-size: 13px; color: var(--color-neutral-700);">
+      <span>© 2023 Tous droits réservés. Design – ML-Agency</span>
+      <nav style="display: flex; flex-wrap: wrap; gap: var(--space-4); letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px;">
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Facebook</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Twitter</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Google+</a>
+        <a href="#" style="color: var(--color-neutral-800); text-decoration: none;" style-hover="color: var(--color-accent-700);">Pinterest</a>
+      </nav>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+const BOOKS = [{"cat":0,"title":"Casse-tête","desc":"De sombres constats vont suivre, pour quelques uns emprisonnés dans des lettres volontairement grêles dont la fragilité incite à briser les grilles… ou comment exprimer, prolonger la révolte, susciter la réflexion. À présent, que faire de ma si infime place pour vivifier mes liens avec ce monde… sinon approfondir sans concession, cette danse de la lettre et de la langue, obstinément.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/10/Casse-tete.jpg?w=600&ssl=1","link":"http://www.plainepage.com/editions/oublies/cassetete.htm","cta":"Je lis"},{"cat":0,"title":"Dans les yeux de Zazz’","desc":"Un livre pour l’oreille et pour l’oeil, un livre où les sons et les graphies se confrontent et se rencontrent, dansent en vis-à-vis et ensemble. Anne-Marie Jeanjean expérimente dans la langue comme sur la page une poésie visuelle qui émeut les mots et les lettres, rend sensible le sens en jouant avec jubilation sur les similitudes et les différences internes et externes des sonorités et des tracés.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Dans-les-yeux-de-Zazz.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-dans_les_yeux_de_zazz_anne_marie_jeanjean-9782343255446-72473.html","cta":"Je lis"},{"cat":0,"title":"SANS – Brise Lames","desc":"Une écriture dans laquelle l’ordinaire est le théâtre de rencontres étranges, de violences éprouvées et évoquées avec une sorte d’indifférence à la fois absentée, attentive et combative. Les transformations réelles, les transformations rêvées et celles qu’effectue l’écriture se mêlent et nous entraînent dans un processus « dangereux » et passionnant, à l’étrange dynamique.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/briselames.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-sans_brise_lames_anne_marie_jeanjean-9782343171241-62590.html","cta":"Je lis"},{"cat":0,"title":"Le stage d’athlétisme poétique","desc":"Anne-Marie Jeanjean transpose l’univers poétique dans plusieurs séquences humoristiques où défilent tour à tour une consultante pour sonder l’ampleur du mal-être, un atelier de mise en forme poético-athlétique et, finalement, l’éclosion poétique. Elle infléchit la poésie hors de son antre intellectuel et craintif en se frottant à la musculature collective, puis aux joutes verbales.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/Le-stage-dathletisme-poetique.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-le_stage_d_athletisme_poetique_anne_marie_jeanjean-9782343122786-53852.html","cta":"Je lis"},{"cat":0,"title":"Ainsi chantait Miss Drac’Ula…","desc":"Anne-Marie Jeanjean aime à poser des passerelles entre passé et présent. Elle écrit sur fond d’inventaire. Il y a de l’épique dans ce texte aux vers vertigineux. Et du sonore vociféré à défaut de pouvoir le chanter : « peux pas chanter – ça pleure partout / sous la peau – peux pas chanter / ça braille partout dans l’cerveau ». Et du visuel aussi, autant de traces en surimpression. Ainsi chantait Miss Drac’Ula… constitue sans doute l’ensemble le plus abouti pour approcher le travail multiforme de l’auteure.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Ainsi-chantait-miss-dracula.jpg?w=600&ssl=1","link":"https://www.edilivre.com/ainsi-chantait-miss-drac-ula-anne-marie-jeanjean.html/","cta":"Je lis"},{"cat":0,"title":"La supplique au centaure","desc":"L’auteure s’adresse au centaure. Elle traverse millénaires et croyances diverses pour interroger l’origine du mythe, ce qui fait retour régulièrement dans les arts, mais aussi la place du savoir et de la conscience. Si la supplique entraîne le lecteur dans le questionnement à propos de nos sociétés hyper techniques, la réponse du centaure, créature d’encre et de peinture, renvoie à un futur pas si lointain.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/La-supplique-du-cantaure.jpg?w=600&ssl=1","link":"https://www.edilivre.com/la-supplique-au-centaure-anne-marie-jeanjean.html/","cta":"Je lis"},{"cat":0,"title":"Si… Une phrase pour une vie","desc":"Si… (une phrase pour une vie) : cette phrase est à chercher dans les vignettes d’écriture visuelle, elle est la dynamique de toute une existence tout en étant contrebalancée par « si je n’étais pas la fille de… ». Mais l’encre pour l’auteure, débordera toujours les mots ! Avec deux textes critiques de Patricio Sanchez et Bernard Teulon-Nouailles, ce dernier donnant une vision plus globale du parcours de l’auteure dans le domaine de la poésie visuelle.","meta":"Format 17 × 27.5 – 28 pages – 20 € · Éditions Cent Regards, collection AUTRE ART / ART AUTRE · Michel Fressoz, Montpellier","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Si.Une-phrase-pour-une-vie-1.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Stèles pour un signe","desc":"En Chine, os, carapaces de tortues ou vases de bronze ont révélé des caractères très anciens dont la beauté, le mystère ne peuvent que stimuler l’imagination, la réflexion. Le poète, qui a choisi quelques-uns d’entre eux ayant en commun le signe de la femme, nous invite à les découvrir tout en questionnant leur sens, l’histoire ancienne et leur résonance tant avec son univers personnel qu’avec le monde actuel.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/steles-pour-un-signe.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-steles_pour_un_signe_anne_marie_jeanjean-9782296569539-36569.html","cta":"Je lis"},{"cat":0,"title":"21 lettres","desc":"Correspondance échangée AMJ et Armand le poète : prétexte pour faire plus ample connaissance en écrivant chaque lettre dans un graphisme différent. On frôle le dessin et d’autres choses plus fuyantes qui s’expriment autrement.","meta":"21 lettres sur papier paille pliées dans une pochette de papier Sennelier gris · Format 21 × 10 avec fermoir sur fil de jardin – 15 € – Tardigradéditions","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/10/21lettres.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Cependant","desc":"Cependant scande le texte, ouvrant un interstice de possibles ; aussi infimes soient-ils, il faut s’en emparer… Le pays n’est pas nommé, se laissant découvrir peu à peu. Cette « lettre à une jeune poète » est une exhortation à prendre appui sur sa culture, sur un passé que d’aucuns veulent effacer pour réécrire l’histoire à leur seul profit. Sous l’oppression, la poésie n’aide-t-elle pas la prise de conscience en changeant le regard ? Dédié à celle qui se protège sous des noms d’emprunt – à celles et ceux qui se trouvent en danger… en ouvrant un livre.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/cependant-cover.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Toi, elle, la seule","desc":"Ce texte interroge l’époque de ce début du XXe siècle où l’on meurt pour des écrits, des poèmes. Une époque de délation, calomnie, paranoïa collective, surveillance de tout instant, y compris par les proches, composent le lot quotidien avec « Au matin, ce que signifie / D’apprendre les morts de la nuit », sans oublier les fausses nouvelles et la peur partout, constamment. Dans cet univers noir, une femme, Anna Akhmatova, aiguise son regard critique, protège sa liberté intérieure, résiste à l’acharnement qui, durant des dizaines et des dizaines d’années veut la réduire, étouffer sa voix, son écriture.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/toi-elle-la-seule.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Bruits","desc":"Quand les mots ne suffisent plus dans la cacophonie du monde, face au nivellement et au formatage meurtrier des cultures.","meta":"Ed. Offerta Speciale, collection d’écriture visuelle – Carla Bertola et Alberto Vitacchio – Corso de Nicola, 20 – 10128 Torino – Italie","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/bruits.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"La Veine Basilique","desc":"Le triptyque complet de la Cantate Barbare et de ses deux suites : Dérive et Memento. L’aventure singulière constituée par la rencontre avec un centaure dans une cathédrale, puis la traversée d’une sanguine d’Hubert Robert, ne vont pas sans provoquer une cascade de conséquences mis en évidence par le rythme effréné de l’écriture. Si l’attente tourmentée de Dérive succède à la course dangereuse, le pire est toujours présent, latent.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/La-Veine-Basilique.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-la_veine_basilique_anne_marie_jeanjean-9782747502832-10231.html","cta":"Je lis"},{"cat":0,"title":"En ce temps-là","desc":"À partir des « icônes » du sculpteur Attila (boîtes métalliques alimentaires travaillées en tant qu’icônes de notre temps) une courte fiction où se considère notre époque du point de vue de la consommation alimentaire.","meta":"Tardigradéditions – 2001","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/en-ce-temps-la.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Moisson de ténèbres","desc":"Un cauchemar ramène à la conscience des bribes de mémoire, d’images noires. C’est la première de ces moissons…","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/moisson-de-tenebre2.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"M.T","desc":"Un souvenir resurgit brutalement, refaisant vivre un échange entre deux femmes qui se connaissent assez peu… Mais ces quelques mots lézardent le temps.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/mt.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Lettre à la folle","desc":"Hommage à la jeune folle familière de l’enfance qui a réveillé un émoi très secret.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/lettre-a-la-folle.jpg?w=600&ssl=1","link":"https://editions-jacques-bremond.fr/auteur.php?id=100","cta":"Je lis"},{"cat":0,"title":"Atlas Imaginaire","desc":"Très bel ouvrage de poèmes anciens avec trois collages du peintre pragois Milos Noll.","meta":"Galerie Soleil Noir – 1987 – Épuisé","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Atlas-imaginaire-1.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Pour novembre","desc":"Triptyque de nouvelles poétiques intégrant neuf encres de Danièle Busquet. C’est l’interrogation du destin à travers les lames du tarot et les questions qu’elles suscitent ne font qu’épaissir le charme de cet univers singulier où les personnages du présent (et ceux du passé en ombre chinoise…) hantent une réalité instable : leurs fugues violentes ne servent qu’à faire resurgir malgré eux leur propre histoire.","meta":"Éditions Jacques Brémond – 1985","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/pour-novembre.jpg?w=600&ssl=1","link":"https://editions-jacques-bremond.fr/auteur.php?id=100","cta":"Je lis"},{"cat":0,"title":"Sables","desc":"Fiction poétique très éclatée qui fut écrite uniquement à partir de la photographie de A.L. Gueite qui clôture le livre. Les deux précédentes photographies de marine étant retravaillées par Anne-Marie Jeanjean.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/sable.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Via Scavi","desc":"Poésie en éclats, au rythme oppressant d’une célébration pour conjurer la disparition. Ce texte de la voix et du souffle qui laisse d’ores et déjà entrevoir ce que sera cette écriture bien plus tard, a attiré Georges Baal qui en a réalisé une version scénique au centre culturel du Languedoc à Montpellier en 1981 et 1982 ainsi qu’au centre culturel suédois à Paris en 1982.","meta":"Georges Baal metteur en scène et récitant · Christian Rugraff : acteur/performeur · 1ère édition épuisée (quelques copies disponibles chez Tardigradéditions) 1981","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/via-scavi-e1694609915854.jpg?w=600&ssl=1","link":"","cta":""},{"cat":0,"title":"Fréquence 243 MCS","desc":"Texte-collage noir et blanc à quatre mains où se joue la « provoc » de l’époque. Cette fréquence SOS en aviation (qui a changé) a-t-elle symbolisé peut-être bien autre chose à lire/voir : le chaos renforcé par les collages effectués par Anne-Marie Jeanjean sur des textes d’Alain Robinet. Nous ne faisons que voir les bandes télex, mais le crépitement de l’annonce des catastrophes petites ou grandes…","meta":"Quelques copies disponibles chez Tardigradéditions – 1981","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/frequence-243.jpg?w=600&ssl=1","link":"","cta":""},{"cat":1,"title":"Busta Sopresa","desc":"Edition Offerta Speciale, Turin, Italie.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/20230921_142830.jpg?w=600&ssl=1","link":"","cta":""},{"cat":1,"title":"Pas tout à fait la nef des fous","desc":"Rassemblés à l’initiative de Michel Cassir ils forment un chœur déconcertant ces imprécateurs dont les mots crus démasquent les oppressions virales en cours, ces buveurs de rêves épris de vins magiques ou de philtres étranges, ces performeurs à langue râpeuse et sonnante, ces explorateurs d’arythmies saisissantes, ces trouvères lyriques et méditatifs, ces rimbaldiens aux semelles de vent…","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/10/Pas-tout-a-fait-la-nef-des-fous.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-pas_tout_a_fait_la_nef_des_fous_cadavre_exquis_demasque_michel_cassir_christian_cavaille-9782343214931-67107.html","cta":"Lire"},{"cat":1,"title":"Étoiles d’encre 20","desc":"Pourquoi la plupart des femmes n’écrivent-elles pas pour être lues et reconnues bien qu’elles tiennent souvent un journal et qu’elles soient des correspondantes fidèles et enthousiastes ? Et pourquoi dans certains pays cherche-t-on à faire taire celles et ceux qui au contraire se refusent au silence ? Deux questions qui ont guidé en parallèle notre réflexion depuis la création d’Étoiles d’Encre.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/10/Etoiles-dencre.jpg?w=600&ssl=1","link":"https://www.editionsfemmeschevrefeuille.fr/revue-etoiles-dencre/","cta":"Je lis"},{"cat":1,"title":"Étoiles d’encre 63-64","desc":"Folles ? disons-nous ? Bien sûr. Folles d’aimer sans mesure, folles de nos fragilités et de notre force, folles d’être ce lieu de tous les liens, de toutes les espérances ; folles de nos corps citadelles, nos corps volcans, nos corps interdits. Ce sol matrice, temple de la vie, lieu de toutes les entraves mais aussi de toutes les libertés, de tous les désirs, de toutes les exaltations. Folles de se fondre en l’autre, car l’autre est Autre.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/10/Sommes-nous-folles-e1697532371474.jpg?w=600&ssl=1","link":"https://www.editionsfemmeschevrefeuille.fr/revue-etoiles-dencre/","cta":"Je lis"},{"cat":1,"title":"Muse toi-même !","desc":"Nadine Agostini, Edith Azam, Pauline Catherinot, Anne-Marie Jeanjean, Emmanuelle K., Claudie Lenzi, Alice Popieul — Muse toi-même ! Anthologie arbitraire de poésie féminine au XXIe siècle, sous la direction de Guilhem Fabre (poésie). « Poète, prends ton luth et me donne un baiser » ? Inspiratrice passive, la muse n’est définitivement plus.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Muse-toi-meme.jpg?w=600&ssl=1","link":"https://www.decitre.fr/livres/muse-toi-meme-anthologie-arbitraire-de-poesie-feminine-au-xxie-siecle-9791092622119.html","cta":"Je veux"},{"cat":1,"title":"Les Trobairitz","desc":"Un ouvrage captivant et instructif sur le vécu de l’écriture, les intérêts et la spécificité de chacune de ces poètes dont la présence au monde plonge ses racines dans notre héritage culturel comme le démontre l’helléniste André Vinas dans sa préface qui est aussi un historique et même, à plusieurs égards, une réhabilitation.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/trobairitz.jpg?w=600&ssl=1","link":"","cta":""},{"cat":1,"title":"Mai 68, échos du Languedoc","desc":"Une enfant de dix ans, son grand frère en route pour l’Asie, un commerçant montpelliérain, un photographe amoureux, un militant d’extrême droite, un étudiant guinéen, une journaliste stagiaire, une jeune Oranaise, une étudiante allemande, un peintre à l’explosif, un alchimiste… Destins croisés, qui s’enlacent ou se heurtent au fil de quinze nouvelles tissées par des auteurs du Languedoc-Roussillon.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Mai-68-echos-du-languedoc.jpg?w=600&ssl=1","link":"https://www.decitre.fr/livres/mai-68-9782350660608.html","cta":"Je lis"},{"cat":1,"title":"Nouvelles de la révolte","desc":"1907 : les hommes et les femmes du Languedoc-Roussillon se révoltent pour défendre leur terre, le fruit de leur travail, leur dignité. Toute la région est debout. Dans toutes les villes, des centaines de milliers de citoyens s’opposent au pouvoir politique, à ses soldats, à un certain Clemenceau. 2007 : que reste-t-il de cette révolte, de ces « gueux » en colère, dans notre mémoire collective ? Comme une trace du souvenir, cette anthologie recueille seize « Nouvelles de la révolte ».","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Nouvelles-de-la-revolte.jpg?w=600&ssl=1","link":"https://www.decitre.fr/livres/nouvelles-de-la-revolte-1907-2007-9782350660394.html","cta":"Je lis"},{"cat":2,"title":"La voix du vent","desc":"Une jeune femme figée dans une éternelle adolescence essaie de communiquer son monde. Ce sont ses tentatives répétées qui sont ici relatées par le duo de mère-sur-gardiennes face à un témoin étranger.","meta":"Illustrations : Aline Jansen – Éditions Nacsel – 1999","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/la-voix-du-vent-e1694609696139.jpg?w=600&ssl=1","link":"","cta":""},{"cat":2,"title":"La cuirasse","desc":"D’un fragment de texte, le photographe Didier Leclerc a réalisé un pré-montage-sculpture qu’il a photographié. C’est à partir de ces photographies qu’Anne-Marie Jeanjean a disposé un transparent sur lequel elle a réécrit et ajouté du texte, accentuant l’effet de page éclaté.","meta":"Éditions Atelier N 89 – (édition limitée) – 1994 – Épuisé","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/la-cuirasse.jpg?w=600&ssl=1","link":"","cta":""},{"cat":3,"title":"Stèles pour un signe","desc":"En Chine, os, carapaces de tortues ou vases de bronze ont révélé des caractères très anciens dont la beauté, le mystère ne peuvent que stimuler l’imagination, la réflexion. Le poète, qui a choisi quelques-uns d’entre eux ayant en commun le signe de la femme, nous invite à les découvrir tout en questionnant leur sens, l’histoire ancienne et leur résonance tant avec son univers personnel qu’avec le monde actuel.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/steles-pour-un-signe.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-steles_pour_un_signe_anne_marie_jeanjean-9782296569539-36569.html","cta":"Je le veux !"},{"cat":3,"title":"Anthologie de poésie chinoise","desc":"Cette édition bilingue présente une sélection de poèmes évoquant deux formes de modernité. D’abord, la période allant de 1917 à 1939, puis celle s’étendant de 1987 à 2014 pour une confrontation onirique de ces écrits et de leur rapport à la tradition.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/Anthologie-de-poesie-chinoise.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-anthologie_de_poesie_chinoise_modernite_1917_1939_1987_2014_anne_marie_jeanjean_sun_shanshan-9782343159652-61138.html","cta":"Je lis"},{"cat":3,"title":"Le cheval de Mingdao","desc":"Ces variations à quatre mains sur les échos du passé évoquent Chomin, Yuexiu et Mingdao à travers quelques réflexions et interrogations dialoguées entre les deux poètes. En laissant une large part à la subjectivité des deux auteurs et ne pouvant trouver place dans « L’Encre phoenix » qui retrace au plus juste l’histoire de cette famille, elles ont permis un autre jeu de résonances… à travers un « là-bas/maintenant » plus personnellement abordé.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Le-cheval-de-Mingdao.jpg?w=600&ssl=1","link":"https://www.domens.fr/litterature.htm#mingdao","cta":"Je lis"},{"cat":3,"title":"Poèmes de prison","desc":"Pour la première fois, en 2007, ces poèmes paraissent en Occident. La traduction en fut particulièrement délicate, argot et seutchouanais étant mêlés au mandarin. Nous avons essayé de respecter le plus fidèlement possible le texte et « l’esprit du texte ». Notre traduction du Grand Massacre a été reprise dans l’Empire des Ténèbres. Depuis 2011 cet auteur vit maintenant en Allemagne.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/poemes-de-prison.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-poemes_de_prison_le_grand_massacre_liao_yiwu-9782296048652-25424.html","cta":"Je lis"},{"cat":3,"title":"L’os et l’esclave","desc":"Comment l’imagination et la créativité peuvent vous envoyer en prison… ou… comment pouvait-on en Chine devenir DISSIDENT… Tel est le témoignage de SUN Shanshan au cours de ses rencontres avec Anne-Marie Jeanjean où les deux traditions poétiques ainsi que l’idéologie vont inter-réagir.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/Los-et-lesclave.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-l_os_et_l_esclave_anne_marie_jeanjean_sun_shanshan-9782747562416-17351.html","cta":"Je veux !"},{"cat":3,"title":"L’encre Phoenix","desc":"De la fin du 19e siècle, au temps de l’avant-dernier empereur, jusqu’aux années 1960, ce volume est le témoignage authentique de la vie d’une famille chinoise qui subit de plein fouet le télescopage de l’ancienne et de la nouvelle Chine, à travers son « âge d’or », ses difficultés, ses deuils et ses douleurs. Le fil narratif épouse les paroles de Shanshan, cadet de la quatrième génération, tandis que citations et réflexions pointent régulièrement le passé millénaire de la culture chinoise.","meta":"","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/08/Lencre-Phoenix.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-l_encre_phoenix_anne_marie_jeanjean_sun_shanshan-9782747544160-13249.html","cta":"Je veux !"},{"cat":3,"title":"Dans le souffle du sabre","desc":"YU Xuanji – poète du 9e siècle chinois, présente dans des anthologies mais peu connue hors cercle de connaisseurs – est publiée et commentée. Son histoire est marquée par une culture raffinée et libre, accusée probablement à tort de prostitution et d’avoir assassiné son chaperon. Condamnée après un procès sous influence, sa voix traverse les siècles et parvient comme un gage de vérité blessée.","meta":"<a href=\"https://www.radiofmplus.org/jardin-disis-16-mai-dans-le-souffle-du-sabre-yu-xuanji/\">Écouter l’interview à propos de YU Xuanji (Les jardins d’Isis, Radio FM+)</a>","cover":"https://i0.wp.com/am-jeanjean.com/wp-content/uploads/2023/09/Dans-le-souffle-du-sabre.jpg?w=600&ssl=1","link":"https://www.editions-harmattan.fr/livre-yu_xuanji_dans_le_souffle_du_sabre_shanshan_sun_anne_marie_jeanjean-9782140342400-77437.html","cta":"Je lis"}];
+const CATS = ["Ouvrages","Ouvrages collectifs","Autres ouvrages","À quatre mains"];
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { sent: false, creationsOpen: false, openCat: -1, open: -1 }; }
+  componentDidMount() {
+    try { const t = localStorage.getItem("amj-theme"); if (t) this.setState({ amjTheme: t }); } catch (e) {}
+    this.onAmjProgress = () => {
+      const d = document.documentElement;
+      const max = (d.scrollHeight - d.clientHeight) || 1;
+      const p = Math.min(100, Math.max(0, ((window.scrollY || d.scrollTop || 0) / max) * 100));
+      if (Math.abs(p - (this.state.amjProgress || 0)) > 0.4) this.setState({ amjProgress: p });
+    };
+    window.addEventListener("scroll", this.onAmjProgress, { passive: true });
+    this.onAmjProgress();
+    this.onAmjScroll = () => {
+      const s = (window.scrollY || document.documentElement.scrollTop || 0) > 60;
+      if (s !== this.state.amjScrolled) this.setState({ amjScrolled: s });
+    };
+    window.addEventListener("scroll", this.onAmjScroll, { passive: true });
+    this.onAmjScroll();
+    const decos = Array.from(document.querySelectorAll("[data-amj-deco]"));
+    this.onMove = (e) => { const x = e.clientX / window.innerWidth - 0.5, y = e.clientY / window.innerHeight - 0.5; decos.forEach((d) => { const k = parseFloat(d.getAttribute("data-depth") || "10"); d.style.translate = (x * k).toFixed(1) + "px " + (y * k).toFixed(1) + "px"; }); };
+    window.addEventListener("pointermove", this.onMove, { passive: true });
+    this.onKey = (e) => { if (this.state.open < 0) return; if (e.key === "Escape") this.setState({ open: -1 }); if (e.key === "ArrowRight") this.step(1); if (e.key === "ArrowLeft") this.step(-1); };
+    window.addEventListener("keydown", this.onKey);
+    const targets = Array.from(document.querySelectorAll("[data-amj-reveal]"));
+    if (targets.length && "IntersectionObserver" in window) {
+      this.io = new IntersectionObserver((entries) => { entries.forEach((e) => { const el = e.target; if (!e.isIntersecting) { if (e.boundingClientRect.bottom < 0) { el.dataset.revealed = "1"; el.style.opacity = ""; this.io.unobserve(el); } return; } el.dataset.revealed = "1"; el.style.opacity = ""; el.style.animation = "amj-rise 900ms cubic-bezier(.2,.7,.2,1) both"; this.io.unobserve(el); }); }, { rootMargin: "200px 0px 200px 0px", threshold: 0 });
+      targets.forEach((el) => { el.style.opacity = "0"; this.io.observe(el); });
+      this.safety = setTimeout(() => targets.forEach((el) => { if (!el.dataset.revealed) { el.dataset.revealed = "1"; el.style.opacity = ""; el.style.animation = "amj-rise 900ms cubic-bezier(.2,.7,.2,1) both"; } }), 900);
+    }
+  }
+  componentWillUnmount() { window.removeEventListener("scroll", this.onAmjProgress); window.removeEventListener("scroll", this.onAmjScroll); clearTimeout(this.safety); window.removeEventListener("pointermove", this.onMove); window.removeEventListener("keydown", this.onKey); if (this.io) this.io.disconnect(); }
+  listFor(cat) { return BOOKS.map((b, i) => ({ ...b, i })).filter((b) => b.cat === cat); }
+  shanList() { return BOOKS.map((b, i) => ({ ...b, i })).filter((b) => b.cat === 3); }
+  step(d) { const list = this.listFor(BOOKS[this.state.open].cat); const k = list.findIndex((b) => b.i === this.state.open); if (k < 0) return; const n = list[(k + d + list.length) % list.length]; this.setState({ open: n.i }); }
+  hi(str) { const A = "var(--color-accent-700)"; return String(str || "").split(/(«[^»]*»)/).map((p, i) => (p.charAt(0) === "«" && p.charAt(p.length - 1) === "»") ? React.createElement("em", { key: "q" + i, style: { fontStyle: "italic", color: A } }, p) : p); }
+  renderVals() {
+    const TAGS = ["Poésie, fictions éclatées et livres d’artiste — de Via Scavi (1981) à Casse-tête.", "Anthologies, revues et chœurs à plusieurs voix, de Turin au Languedoc.", "Éditions limitées, photographies retravaillées et pages éclatées.", "Traductions et variations à quatre mains, entre écriture visuelle et calligraphie libre."];
+    const LABELS = ["Ouvrages", "Ouvrages collectifs", "Autres ouvrages", "Avec Shanshan Sun"];
+    const oc = this.state.openCat;
+    const mk = (b, k) => ({ ...b, num: String(b.i + 1).padStart(2, "0"), delay: (k * 55) + "ms", open: () => this.setState({ open: b.i }), img: React.createElement("img", { src: b.cover, alt: "", style: { width: "100%", height: "100%", objectFit: "cover", display: "block" } }) });
+    const jumpTo = (id) => { const el = document.getElementById(id); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" }); };
+    const groups = LABELS.map((label, idx) => {
+      const on = oc === idx, id = "collection-" + idx;
+      return { label, idx, id, num: "0" + (idx + 1), tagline: TAGS[idx], count: this.listFor(idx).length, open: on, chev: on ? "45deg" : "0deg",
+        titleColor: on ? "var(--color-accent-700)" : "var(--color-text)", tabColor: on ? "var(--color-text)" : "var(--color-neutral-800)", tabBorder: on ? "var(--color-accent)" : "transparent",
+        books: on ? this.listFor(idx).map(mk) : [],
+        toggle: () => {
+          const el = document.getElementById(id);
+          const before = el ? el.getBoundingClientRect().top : null;
+          this.setState({ openCat: on ? -1 : idx }, () => {
+            if (before == null) return;
+            requestAnimationFrame(() => {
+              const el2 = document.getElementById(id);
+              if (!el2) return;
+              const delta = el2.getBoundingClientRect().top - before;
+              if (Math.abs(delta) > 1) window.scrollBy(0, delta);
+            });
+          });
+        },
+        jump: () => { this.setState({ openCat: idx }); setTimeout(() => jumpTo(id), 60); } };
+    });
+    const b0 = this.state.open >= 0 ? BOOKS[this.state.open] : null;
+    return {
+      theme: this.state.amjTheme || "dark",
+      shanFade: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, rgba(11, 10, 9, 0) 0%, rgba(11, 10, 9, 0.26) 42%, rgba(11, 10, 9, 0.7) 70%, rgba(11, 10, 9, 0.95) 88%, #0b0a09 100%)"
+        : "linear-gradient(180deg, rgba(23, 22, 20, 0) 0%, rgba(23, 22, 20, 0.34) 44%, rgba(23, 22, 20, 0.86) 78%, #171614 100%)",
+      ground: (this.state.amjTheme || "dark") === "dark"
+        ? "linear-gradient(180deg, #080807 0%, #1d1a17 14%, #0b0a0a 34%, #221e1a 54%, #0a0a09 74%, #1e1b18 90%, #0b0a09 100%)"
+        : "linear-gradient(180deg, #f5f4f2 0%, #efedea 46%, #f3f2f0 100%)",
+      themeIcon: (this.state.amjTheme || "dark") === "dark" ? "☀" : "☾",
+      progress: (this.state.amjProgress || 0).toFixed(1) + "%",
+      toggleTheme: () => { const next = (this.state.amjTheme || "dark") === "dark" ? "light" : "dark"; this.setState({ amjTheme: next }); try { localStorage.setItem("amj-theme", next); } catch (e) {} },
+      headPad: "clamp(18px, 2.4vw, 30px) clamp(16px, 4vw, 56px) clamp(30px, 3.4vw, 44px)",
+      headBg: "transparent",
+      headShadow: "none",
+      headBlur: "none",
+      barBg: this.state.amjScrolled ? "rgba(253, 250, 244, 0.62)" : "transparent",
+      sheetDisplay: this.state.amjMenu ? "flex" : "none",
+      menuExpanded: this.state.amjMenu ? "true" : "false",
+      toggleMenu: () => this.setState((s) => ({ amjMenu: !s.amjMenu })),
+      toggleBorder: this.state.amjScrolled ? "rgba(227, 207, 174, 0.7)" : "transparent",
+      barBorder: this.state.amjScrolled ? "rgba(227, 207, 174, 0.6)" : "transparent",
+      barShadow: this.state.amjScrolled ? "0 16px 36px -24px rgba(8, 7, 6, 0.45)" : "none",
+      barBlur: this.state.amjScrolled ? "blur(16px) saturate(1.08)" : "none",
+      ink: this.state.amjScrolled ? "#444141" : "#fdfaf4",
+      logoDark: this.state.amjScrolled ? 0 : 1,
+      logoLight: this.state.amjScrolled ? 1 : 0,
+      logoW: "clamp(48px, 4.4vw, 60px)",
+      creationsOpen: this.state.creationsOpen,
+      openCreations: () => this.setState({ creationsOpen: true }), closeCreations: () => this.setState({ creationsOpen: false }), toggleCreations: () => this.setState((s) => ({ creationsOpen: !s.creationsOpen })),
+      groups,
+      shanBooks: this.listFor(3).map(mk),
+      isOpen: !!b0,
+      cur: b0 ? { ...b0, num: String(this.state.open + 1).padStart(2, "0"), catLabel: CATS[b0.cat], hasMeta: !!b0.meta, hasLink: !!b0.link, descNodes: this.hi(b0.desc), img: React.createElement("img", { src: b0.cover, alt: b0.title, style: { width: "100%", height: "auto", display: "block" } }), metaNode: React.createElement("span", { dangerouslySetInnerHTML: { __html: b0.meta } }) } : {},
+      close: () => this.setState({ open: -1 }), stop: (e) => e.stopPropagation(), prev: () => this.step(-1), next: () => this.step(1),
+      sentNote: this.state.sent ? "Merci, votre message est parti." : "",
+      onSubmit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

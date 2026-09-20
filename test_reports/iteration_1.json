@@ -1,0 +1,26 @@
+{
+  "summary": "Frontend-only testing of the static AMJ site (9 routes). All routes return 200, redirect works (/poesie -> /poesie/), no console errors, no forbidden CDN/wp-content requests, theme toggle persists in localStorage 'amj-theme', mobile burger opens sheet, dropdown menu shows Livres/Expositions/Poésies visuelles & auditives/Revue Textuerre, contact form submits and internal logic contains mailto: with anne-marie.jeanjean5@orange.fr, poesie audio triggers request to LOCAL /media/2023/08/*.mp3 (HTTP 200), livres book cover opens detail modal, actualites shows year sections (2024,2023,2022,2020,2019...), SDV data loaded (19 items). One broken remote image on homepage.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Homepage hero/background image", "issue": "Broken remote image request to https://unsplash.com/photos/GdCR9_WMz_4/download?force=true&w=1800 (naturalWidth=0). Also violates the 'self-hosted assets' requirement even though unsplash is not in the explicit forbidden host list.", "selector": "#dc-root img[src*='unsplash.com']", "priority": "HIGH"}
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Replace the remote unsplash.com/photos/GdCR9_WMz_4/download image on / with a self-hosted local asset (or remove it) so no external image request is made and no <img> is broken."
+  ],
+  "critical_code_review_comments": [
+    "Homepage still references an external Unsplash URL. Self-hosting requirement should include ALL external images (not just wp-content/googleapis). Consider adding an audit step during build that fails if any <img src> is not a relative path or /media/*.",
+    "Audio playback uses a custom global player element instead of native <audio>/<source> tags, so a naive querySelectorAll('audio') returns 0. The requirement wording mentioned <audio>/<source>; while the functional behaviour is correct (local /media mp3 fetched, player UI works), consider using a real <audio> element for semantics/a11y/SEO or update the spec doc."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "~95% (13/14 checks pass; 1 broken image on home)"},
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "All 9 routes tested via public preview URL https://amj-production.preview.emergentagent.com. Interactive selectors are data-amj-* (data-amj-toggle, data-amj-burger, data-amj-sheet, data-amj-nav) — there are intentionally NO data-testid. Theme is set via localStorage 'amj-theme' (persisted, verified). Audio on /poesie/ is a custom global player (not a native <audio> element in DOM); to verify audio requests, observe network for .mp3 after clicking a track button. Contact form submit path can't be captured by overriding window.location.href from evaluate context (Location.href is not overridable via defineProperty in most engines); instead verified indirectly (submit event fires, beforeunload fires, base64 dc-logic decodes to strings containing 'mailto:' and the target email). Livres modal opens on clicking the book <button> wrapping the cover.",
+  "rca of the issue": "Broken homepage image: the source HTML/template contains an external Unsplash 'download' URL that isn't a direct image resource (Unsplash blocks /photos/<id>/download hotlinking), so the browser fetches 0 bytes -> naturalWidth=0. Fix: download the intended photo, place it under /app/site/dist/media/ (or /public/), and update the template to reference the local path."
+}

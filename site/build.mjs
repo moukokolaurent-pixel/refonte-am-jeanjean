@@ -88,6 +88,9 @@ function rewriteAssets(s) {
   s = s.split("https://am-jeanjean.com/wp-content/uploads/").join("/media/");
   s = s.split("http://am-jeanjean.com/wp-content/uploads/").join("/media/");
   s = s.split("https://i0.wp.com/am-jeanjean.com/wp-content/uploads/").join("/media/");
+  // self-host the one external stock photo (home slideshow slide 3) — no external image request
+  s = s.replace(/https:\/\/unsplash\.com\/photos\/GdCR9_WMz_4\/download\?force=true(?:&amp;|&)w=1800/g, "/media/2023/09/calligraphie-ancienne.jpg");
+  s = s.replace(/https:\/\/unsplash\.com\/photos\/GdCR9_WMz_4[^"']*/g, "/media/2023/09/calligraphie-ancienne.jpg");
   return s;
 }
 
@@ -258,3 +261,4 @@ const CONTACT_ONSUBMIT_MAILTO =
 }
 
 main();
+process.exit(0);

@@ -221,6 +221,8 @@ function main() {
   // logos
   fs.copyFileSync(path.join(SRC, "logo-amj-noir.png"), path.join(DIST, "logo-amj-noir.png"));
   fs.copyFileSync(path.join(SRC, "logo-amj-blanc.png"), path.join(DIST, "logo-amj-blanc.png"));
+  // Google Search Console verification file (served at site root)
+  fs.copyFileSync(path.join(SITE, "google3b602efc07c7bd96.html"), path.join(DIST, "google3b602efc07c7bd96.html"));
   // data files (asset-rewritten)
   for (const df of ["actualites-data.js", "saveur-data-1.js", "saveur-data-2.js"]) {
     fs.writeFileSync(path.join(DIST, "assets/data/", df), rewriteAssets(fs.readFileSync(path.join(SRC, df), "utf8")));
